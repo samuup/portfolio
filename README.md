@@ -31,7 +31,7 @@ const CONFIG = {
 
   projectRepo: "https://github.com/samuup/WarehOS",     // repo de WarehOS
   bellaRepo: "https://github.com/samuup/Bella-Napoli",  // repo de Bella Napoli
-  siteRepo: "https://github.com/samuup/samuup.github.io", // repo de este sitio
+  siteRepo: "https://github.com/samuup/portfolio", // repo de este sitio
 };
 ```
 
@@ -69,29 +69,22 @@ Cambia esos valores y el sitio entero se adapta.
 
 ## Publicarlo en GitHub Pages
 
-### Opción A — repositorio `usuario.github.io` (URL más corta, recomendada)
+### Opción A — repositorio `samuup.github.io` (URL más corta, recomendada)
 
 1. Crea un repositorio llamado exactamente `samuup.github.io`.
 2. Sube el contenido de esta carpeta a la rama `main` (el `index.html` debe quedar en la raíz).
 3. Espera 1–2 minutos. Tu sitio estará en `https://samuup.github.io`.
 
-```bash
-cd portafolio
-git init
-git add .
-git commit -m "Portafolio inicial"
-git branch -M main
-git remote add origin https://github.com/samuup/samuup.github.io.git
-git push -u origin main
-```
+Si ya creaste el repo con otro nombre (`portfolio`), puedes renombrarlo en
+**Settings → General → Repository name**; GitHub redirige el nombre anterior.
 
-### Opción B — cualquier nombre de repositorio (por ejemplo, `portafolio`)
+### Opción B — repositorio `portfolio` (la URL incluye el nombre del repo)
 
-1. Crea el repositorio `portafolio` en GitHub y sube los archivos igual que arriba.
+1. Crea el repositorio `portfolio` en GitHub y sube los archivos igual que arriba.
 2. En GitHub ve a **Settings → Pages**.
 3. En *Build and deployment* elige **Deploy from a branch**.
 4. Selecciona rama `main` y carpeta `/ (root)`. Guarda.
-5. Tu sitio estará en `https://samuup.github.io/portafolio/`.
+5. Tu sitio estará en `https://samuup.github.io/portfolio/`.
 
 ```bash
 cd portafolio
@@ -99,7 +92,7 @@ git init
 git add .
 git commit -m "Portafolio inicial"
 git branch -M main
-git remote add origin https://github.com/samuup/portafolio.git
+git remote add origin https://github.com/samuup/portfolio.git
 git push -u origin main
 ```
 

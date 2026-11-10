@@ -18,7 +18,7 @@ const CONFIG = {
 
   projectRepo: "https://github.com/samuup/WarehOS", // repo de WarehOS
   bellaRepo: "https://github.com/samuup/Bella-Napoli", // repo de Bella Napoli
-  siteRepo: "https://github.com/samuup/samuup.github.io", // repo de este sitio
+  siteRepo: "https://github.com/samuup/portfolio", // repo de este sitio
 };
 
 /* -------------------------- 2. TRADUCCIONES -------------------------- */
