@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="dark" />
   <meta name="theme-color" content="#070b0a" />
-  <title>Samuel Prado — Desarrollador de Software</title>
-  <meta name="description" content="Portafolio de Samuel Prado, desarrollador de software especializado en aplicaciones offline-first para escritorio y Android." />
+  <title>Samuel Prado — Desarrollador Web</title>
+  <meta name="description" content="Portafolio de Samuel Prado, desarrollador web con Python, PostgreSQL y React. También apps de escritorio y Android." />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Samuel Prado — Desarrollador de Software" />
-  <meta property="og:description" content="Aplicaciones de escritorio y Android que funcionan sin internet." />
+  <meta property="og:title" content="Samuel Prado — Desarrollador Web" />
+  <meta property="og:description" content="Desarrollo web de la base de datos a la interfaz: Python, PostgreSQL y React." />
   <meta property="og:locale" content="es_ES" />
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
@@ -66,11 +66,11 @@
             <span data-i18n="hero.badge">Disponible para nuevos retos</span>
           </p>
 
-          <h1 data-i18n-html="hero.title">Aplicaciones que <span class="grad">funcionan sin internet</span>.</h1>
+          <h1 data-i18n-html="hero.title">Desarrollo web <span class="grad">de la base de datos a la interfaz</span>.</h1>
 
           <p class="lead" data-i18n="hero.lead">
-            Soy desarrollador de software. Construyo apps de escritorio y Android con Electron, React, Kotlin y
-            Jetpack Compose, cuidando la arquitectura, el rendimiento y la experiencia de uso.
+            Soy desarrollador web. Trabajo con Python y PostgreSQL en el backend, y con HTML, CSS, JavaScript y
+            React en el frontend. Cuando el proyecto lo pide, también construyo apps de escritorio y Android.
           </p>
 
           <div class="hero-actions">
@@ -101,17 +101,17 @@
               <span class="dot dot-red"></span>
               <span class="dot dot-yellow"></span>
               <span class="dot dot-green"></span>
-              <span class="code-file">Developer.kt</span>
+              <span class="code-file">developer.py</span>
             </div>
-            <pre class="code"><code><span class="c-key">data class</span> <span class="c-type">Developer</span>(
-    <span class="c-key">val</span> name: <span class="c-type">String</span> = <span class="c-str">"<span data-config="name">Samuel Prado</span>"</span>,
-    <span class="c-key">val</span> role: <span class="c-type">String</span> = <span class="c-str">"Software Developer"</span>,
-    <span class="c-key">val</span> stack: <span class="c-type">List</span>&lt;<span class="c-type">String</span>&gt; = <span class="c-fn">listOf</span>(
-        <span class="c-str">"Kotlin"</span>, <span class="c-str">"Compose"</span>,
-        <span class="c-str">"Electron"</span>, <span class="c-str">"React"</span>
-    ),
-    <span class="c-key">val</span> focus: <span class="c-type">String</span> = <span class="c-str">"Offline-first"</span>
-)</code></pre>
+            <pre class="code"><code><span class="c-key">class</span> <span class="c-type">Developer</span>:
+    name = <span class="c-str">"<span data-config="name">Samuel Prado</span>"</span>
+    role = <span class="c-str">"Web Developer"</span>
+    stack = [<span class="c-str">"Python"</span>, <span class="c-str">"PostgreSQL"</span>,
+             <span class="c-str">"React"</span>, <span class="c-str">"TypeScript"</span>]
+    focus = <span class="c-str">"Backend &amp; data"</span>
+
+    <span class="c-key">def</span> <span class="c-fn">available</span>(self) -&gt; <span class="c-type">bool</span>:
+        <span class="c-key">return</span> <span class="c-type">True</span></code></pre>
             <div class="code-footer">
               <span class="status-dot" aria-hidden="true"></span>
               <span data-i18n="hero.code.status">compilando ideas…</span>
@@ -132,16 +132,16 @@
         <div class="about-grid">
           <div class="about-text reveal">
             <p data-i18n="about.p1">
-              Me enfoco en aplicaciones que funcionan sin depender de la nube: escritorio con Electron, React y
-              TypeScript, y Android nativo con Kotlin y Jetpack Compose. Me importan la arquitectura, el rendimiento
-              y que la interfaz se entienda sin manual.
+              Me enfoco en desarrollo web: backend con Python y PostgreSQL, y frontend con HTML, CSS, JavaScript,
+              TypeScript y React. Me importan la arquitectura, el rendimiento y que la interfaz se entienda sin
+              manual.
             </p>
             <p data-i18n="about.p2">
               He construido WarehOS, un sistema de inventario de escritorio con múltiples almacenes, lotes y
-              vencimientos, roles, auditoría, reportes PDF/CSV y copias de seguridad cifradas. Antes, una app
+              vencimientos, roles, auditoría, reportes PDF/CSV y copias de seguridad cifradas. También una app
               Android 100% offline para el control de movimientos de camiones en una planta de procesamiento de
-              mineral de hierro. En ambos casos la restricción era la misma: sin internet, sin margen de error y
-              con usuarios que necesitan respuestas rápidas.
+              mineral de hierro. Proyectos con restricciones reales que me obligaron a cuidar los datos y a diseñar
+              interfaces claras.
             </p>
             <p data-i18n="about.p3">
               Ahora busco seguir creciendo en equipos donde pueda aportar en producto, arquitectura y calidad de
@@ -160,11 +160,11 @@
               </div>
               <div class="fact">
                 <dt data-i18n="about.facts.focus">Enfoque</dt>
-                <dd data-i18n="about.facts.focusValue">Escritorio y Android · Offline-first</dd>
+                <dd data-i18n="about.facts.focusValue">Desarrollo web · Backend y datos</dd>
               </div>
               <div class="fact">
                 <dt data-i18n="about.facts.stack">Stack principal</dt>
-                <dd>TypeScript · Kotlin · React</dd>
+                <dd>Python · PostgreSQL · React</dd>
               </div>
               <div class="fact">
                 <dt data-i18n="about.facts.languages">Idiomas</dt>
@@ -466,16 +466,31 @@
               <span class="skill-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>
               </span>
-              <h3 data-i18n="skills.languages">Lenguajes</h3>
+              <h3 data-i18n="skills.frontend">Frontend</h3>
             </div>
             <div class="chips">
-              <span class="chip">TypeScript</span>
-              <span class="chip">Kotlin</span>
-              <span class="chip">Java</span>
-              <span class="chip">JavaScript</span>
-              <span class="chip">SQL</span>
               <span class="chip">HTML</span>
               <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">React</span>
+              <span class="chip">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+              </span>
+              <h3 data-i18n="skills.backend">Backend y datos</h3>
+            </div>
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">SQL</span>
+              <span class="chip">SQLite</span>
+              <span class="chip">APIs REST</span>
             </div>
           </div>
 
@@ -484,33 +499,14 @@
               <span class="skill-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
               </span>
-              <h3 data-i18n="skills.desktop">Escritorio</h3>
+              <h3 data-i18n="skills.mobile">Escritorio y móvil</h3>
             </div>
             <div class="chips">
               <span class="chip">Electron</span>
-              <span class="chip">React</span>
-              <span class="chip">Tailwind CSS</span>
-              <span class="chip">Zustand</span>
-              <span class="chip">Vite</span>
-              <span class="chip">SQLite</span>
-            </div>
-          </div>
-
-          <div class="skill-card reveal">
-            <div class="skill-head">
-              <span class="skill-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M11 18h2"/></svg>
-              </span>
-              <h3 data-i18n="skills.android">Android</h3>
-            </div>
-            <div class="chips">
+              <span class="chip">Kotlin</span>
               <span class="chip">Jetpack Compose</span>
-              <span class="chip">Material 3</span>
               <span class="chip">Room</span>
-              <span class="chip">Navigation Compose</span>
-              <span class="chip">ViewModel</span>
-              <span class="chip">Coroutines &amp; Flow</span>
-              <span class="chip">DataStore</span>
+              <span class="chip">Material 3</span>
             </div>
           </div>
 
@@ -525,10 +521,10 @@
               <span class="chip">Git</span>
               <span class="chip">GitHub</span>
               <span class="chip">VS Code</span>
+              <span class="chip">Vite</span>
               <span class="chip">Android Studio</span>
               <span class="chip">Gradle</span>
               <span class="chip">Vitest</span>
-              <span class="chip">Playwright</span>
             </div>
           </div>
         </div>

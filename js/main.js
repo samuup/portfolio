@@ -24,9 +24,9 @@ const CONFIG = {
 
 const TRANSLATIONS = {
   es: {
-    "meta.role": "Desarrollador de Software",
+    "meta.role": "Desarrollador Web",
     "meta.description":
-      "Portafolio de Samuel Prado, desarrollador de software especializado en aplicaciones offline-first para escritorio y Android.",
+      "Portafolio de Samuel Prado, desarrollador web con Python, PostgreSQL y React. También apps de escritorio y Android.",
 
     "a11y.skip": "Saltar al contenido",
     "a11y.langToggle": "Cambiar a inglés",
@@ -42,9 +42,9 @@ const TRANSLATIONS = {
     "nav.contact": "Contacto",
 
     "hero.badge": "Disponible para nuevos retos",
-    "hero.title": 'Aplicaciones que <span class="grad">funcionan sin internet</span>.',
+    "hero.title": 'Desarrollo web <span class="grad">de la base de datos a la interfaz</span>.',
     "hero.lead":
-      "Soy desarrollador de software. Construyo apps de escritorio y Android con Electron, React, Kotlin y Jetpack Compose, cuidando la arquitectura, el rendimiento y la experiencia de uso.",
+      "Soy desarrollador web. Trabajo con Python y PostgreSQL en el backend, y con HTML, CSS, JavaScript y React en el frontend. Cuando el proyecto lo pide, también construyo apps de escritorio y Android.",
     "hero.cta.projects": "Ver proyectos",
     "hero.cta.contact": "Hablemos",
     "hero.code.status": "compilando ideas…",
@@ -52,14 +52,14 @@ const TRANSLATIONS = {
     "about.eyebrow": "Sobre mí",
     "about.title": "Código claro, apps que funcionan",
     "about.p1":
-      "Me enfoco en aplicaciones que funcionan sin depender de la nube: escritorio con Electron, React y TypeScript, y Android nativo con Kotlin y Jetpack Compose. Me importan la arquitectura, el rendimiento y que la interfaz se entienda sin manual.",
+      "Me enfoco en desarrollo web: backend con Python y PostgreSQL, y frontend con HTML, CSS, JavaScript, TypeScript y React. Me importan la arquitectura, el rendimiento y que la interfaz se entienda sin manual.",
     "about.p2":
-      "He construido WarehOS, un sistema de inventario de escritorio con múltiples almacenes, lotes y vencimientos, roles, auditoría, reportes PDF/CSV y copias de seguridad cifradas. Antes, una app Android 100% offline para el control de movimientos de camiones en una planta de procesamiento de mineral de hierro. En ambos casos la restricción era la misma: sin internet, sin margen de error y con usuarios que necesitan respuestas rápidas.",
+      "He construido WarehOS, un sistema de inventario de escritorio con múltiples almacenes, lotes y vencimientos, roles, auditoría, reportes PDF/CSV y copias de seguridad cifradas. También una app Android 100% offline para el control de movimientos de camiones en una planta de procesamiento de mineral de hierro. Proyectos con restricciones reales que me obligaron a cuidar los datos y a diseñar interfaces claras.",
     "about.p3":
       "Ahora busco seguir creciendo en equipos donde pueda aportar en producto, arquitectura y calidad de código, mientras aprendo de otros desarrolladores.",
     "about.facts.location": "Ubicación",
     "about.facts.focus": "Enfoque",
-    "about.facts.focusValue": "Escritorio y Android · Offline-first",
+    "about.facts.focusValue": "Desarrollo web · Backend y datos",
     "about.facts.stack": "Stack principal",
     "about.facts.languages": "Idiomas",
     "about.facts.languagesValue": "Español · Inglés",
@@ -98,8 +98,9 @@ const TRANSLATIONS = {
     "skills.title": "Con qué trabajo",
     "skills.lead": "Tecnologías y herramientas que uso de forma habitual.",
     "skills.languages": "Lenguajes",
-    "skills.desktop": "Escritorio",
-    "skills.android": "Android",
+    "skills.frontend": "Frontend",
+    "skills.backend": "Backend y datos",
+    "skills.mobile": "Escritorio y móvil",
     "skills.tools": "Herramientas",
 
     "experience.eyebrow": "Trayectoria",
@@ -136,9 +137,9 @@ const TRANSLATIONS = {
   },
 
   en: {
-    "meta.role": "Software Developer",
+    "meta.role": "Web Developer",
     "meta.description":
-      "Portfolio of Samuel Prado, a software developer focused on offline-first desktop and Android applications.",
+      "Portfolio of Samuel Prado, a web developer working with Python, PostgreSQL and React. Also desktop and Android apps.",
 
     "a11y.skip": "Skip to content",
     "a11y.langToggle": "Switch to Spanish",
@@ -154,9 +155,9 @@ const TRANSLATIONS = {
     "nav.contact": "Contact",
 
     "hero.badge": "Open to new challenges",
-    "hero.title": 'Applications that <span class="grad">work without internet</span>.',
+    "hero.title": 'Web development <span class="grad">from database to interface</span>.',
     "hero.lead":
-      "I'm a software developer. I build desktop and Android apps with Electron, React, Kotlin and Jetpack Compose, with a focus on architecture, performance and user experience.",
+      "I'm a web developer. I work with Python and PostgreSQL on the backend, and HTML, CSS, JavaScript and React on the frontend. When a project calls for it, I also build desktop and Android apps.",
     "hero.cta.projects": "View projects",
     "hero.cta.contact": "Let's talk",
     "hero.code.status": "compiling ideas…",
@@ -164,14 +165,14 @@ const TRANSLATIONS = {
     "about.eyebrow": "About me",
     "about.title": "Clear code, apps that work",
     "about.p1":
-      "I focus on applications that work without relying on the cloud: desktop with Electron, React and TypeScript, and native Android with Kotlin and Jetpack Compose. I care about architecture, performance, and interfaces that make sense without a manual.",
+      "I focus on web development: backend with Python and PostgreSQL, and frontend with HTML, CSS, JavaScript, TypeScript and React. I care about architecture, performance, and interfaces that make sense without a manual.",
     "about.p2":
-      "I've built WarehOS, a desktop inventory system with multiple warehouses, batches and expiry dates, roles, auditing, PDF/CSV reports and encrypted backups. Before that, a fully offline Android app to track truck movements at an iron ore processing plant. In both cases the constraint was the same: no internet, no room for error, and users who need fast answers.",
+      "I've built WarehOS, a desktop inventory system with multiple warehouses, batches and expiry dates, roles, auditing, PDF/CSV reports and encrypted backups. I also built a fully offline Android app to track truck movements at an iron ore processing plant. Real-world projects that forced me to take care of the data and design clear interfaces.",
     "about.p3":
       "I'm now looking to keep growing in teams where I can contribute to product, architecture and code quality while learning from other developers.",
     "about.facts.location": "Location",
     "about.facts.focus": "Focus",
-    "about.facts.focusValue": "Desktop & Android · Offline-first",
+    "about.facts.focusValue": "Web development · Backend & data",
     "about.facts.stack": "Main stack",
     "about.facts.languages": "Languages",
     "about.facts.languagesValue": "Spanish · English",
@@ -210,8 +211,9 @@ const TRANSLATIONS = {
     "skills.title": "What I work with",
     "skills.lead": "Technologies and tools I use on a regular basis.",
     "skills.languages": "Languages",
-    "skills.desktop": "Desktop",
-    "skills.android": "Android",
+    "skills.frontend": "Frontend",
+    "skills.backend": "Backend & data",
+    "skills.mobile": "Desktop & mobile",
     "skills.tools": "Tools",
 
     "experience.eyebrow": "Experience",
