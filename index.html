@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#070b0a" />
+  <title>Samuel Prado — Desarrollador de Software</title>
+  <meta name="description" content="Portafolio de Samuel Prado, desarrollador de software especializado en aplicaciones offline-first para escritorio y Android." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Samuel Prado — Desarrollador de Software" />
+  <meta property="og:description" content="Aplicaciones de escritorio y Android que funcionan sin internet." />
+  <meta property="og:locale" content="es_ES" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contenido</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Inicio" data-i18n-aria="a11y.home">
+        <span class="brand-mark" data-config="initials" aria-hidden="true">SP</span>
+        <span class="brand-name" data-config="name">Samuel Prado</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Principal" data-i18n-aria="a11y.nav">
+        <a href="#about" data-i18n="nav.about">Sobre mí</a>
+        <a href="#projects" data-i18n="nav.projects">Proyectos</a>
+        <a href="#skills" data-i18n="nav.skills">Habilidades</a>
+        <a href="#experience" data-i18n="nav.experience">Trayectoria</a>
+        <a href="#contact" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Change language">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3Z" />
+          </svg>
+          <span id="langLabel">EN</span>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span data-i18n="hero.badge">Disponible para nuevos retos</span>
+          </p>
+
+          <h1 data-i18n-html="hero.title">Aplicaciones que <span class="grad">funcionan sin internet</span>.</h1>
+
+          <p class="lead" data-i18n="hero.lead">
+            Soy desarrollador de software. Construyo apps de escritorio y Android con Electron, React, Kotlin y
+            Jetpack Compose, cuidando la arquitectura, el rendimiento y la experiencia de uso.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              <span data-i18n="hero.cta.projects">Ver proyectos</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#contact" data-i18n="hero.cta.contact">Hablemos</a>
+          </div>
+
+          <div class="hero-social" aria-label="Redes" data-i18n-aria="a11y.social">
+            <a class="icon-link" data-config-href="github" href="https://github.com/samuup" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.4 4.7 18.4 5 18.4 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+            <a class="icon-link" data-config-href="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn" hidden>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm6.5 0h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V21h-4V9Z"/></svg>
+            </a>
+            <a class="icon-link" data-config-href="emailLink" href="mailto:samuelpradouribe@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="glow" aria-hidden="true"></div>
+          <div class="code-card">
+            <div class="code-bar">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="code-file">Developer.kt</span>
+            </div>
+            <pre class="code"><code><span class="c-key">data class</span> <span class="c-type">Developer</span>(
+    <span class="c-key">val</span> name: <span class="c-type">String</span> = <span class="c-str">"<span data-config="name">Samuel Prado</span>"</span>,
+    <span class="c-key">val</span> role: <span class="c-type">String</span> = <span class="c-str">"Software Developer"</span>,
+    <span class="c-key">val</span> stack: <span class="c-type">List</span>&lt;<span class="c-type">String</span>&gt; = <span class="c-fn">listOf</span>(
+        <span class="c-str">"Kotlin"</span>, <span class="c-str">"Compose"</span>,
+        <span class="c-str">"Electron"</span>, <span class="c-str">"React"</span>
+    ),
+    <span class="c-key">val</span> focus: <span class="c-type">String</span> = <span class="c-str">"Offline-first"</span>
+)</code></pre>
+            <div class="code-footer">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span data-i18n="hero.code.status">compilando ideas…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">Sobre mí</p>
+          <h2 data-i18n="about.title">Código claro, apps que funcionan</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p data-i18n="about.p1">
+              Me enfoco en aplicaciones que funcionan sin depender de la nube: escritorio con Electron, React y
+              TypeScript, y Android nativo con Kotlin y Jetpack Compose. Me importan la arquitectura, el rendimiento
+              y que la interfaz se entienda sin manual.
+            </p>
+            <p data-i18n="about.p2">
+              He construido WarehOS, un sistema de inventario de escritorio con múltiples almacenes, lotes y
+              vencimientos, roles, auditoría, reportes PDF/CSV y copias de seguridad cifradas. Antes, una app
+              Android 100% offline para el control de movimientos de camiones en una planta de procesamiento de
+              mineral de hierro. En ambos casos la restricción era la misma: sin internet, sin margen de error y
+              con usuarios que necesitan respuestas rápidas.
+            </p>
+            <p data-i18n="about.p3">
+              Ahora busco seguir creciendo en equipos donde pueda aportar en producto, arquitectura y calidad de
+              código, mientras aprendo de otros desarrolladores.
+            </p>
+          </div>
+
+          <aside class="about-card reveal">
+            <div class="avatar" id="avatar" aria-hidden="true">
+              <span data-config="initials">SP</span>
+            </div>
+            <dl class="facts">
+              <div class="fact">
+                <dt data-i18n="about.facts.location">Ubicación</dt>
+                <dd data-config="location">Venezuela</dd>
+              </div>
+              <div class="fact">
+                <dt data-i18n="about.facts.focus">Enfoque</dt>
+                <dd data-i18n="about.facts.focusValue">Escritorio y Android · Offline-first</dd>
+              </div>
+              <div class="fact">
+                <dt data-i18n="about.facts.stack">Stack principal</dt>
+                <dd>TypeScript · Kotlin · React</dd>
+              </div>
+              <div class="fact">
+                <dt data-i18n="about.facts.languages">Idiomas</dt>
+                <dd data-i18n="about.facts.languagesValue">Español · Inglés</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="projects.eyebrow">Proyectos</p>
+          <h2 data-i18n="projects.title">Cosas que he construido</h2>
+          <p class="section-lead" data-i18n="projects.lead">
+            Proyectos reales, con restricciones reales. Cada uno me enseñó algo distinto sobre producto y código.
+          </p>
+        </div>
+
+        <!-- Proyecto 1: WarehOS -->
+        <article class="project-featured reveal">
+          <div class="project-visual project-visual--desktop">
+            <svg class="app-window" viewBox="0 0 520 340" role="img" aria-label="WarehOS: panel de inventario">
+              <defs>
+                <linearGradient id="wgrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#3ddc84" />
+                  <stop offset="1" stop-color="#38bdf8" />
+                </linearGradient>
+              </defs>
+              <rect x="1" y="1" width="518" height="338" rx="14" fill="#0b1310" stroke="rgba(255,255,255,.13)" stroke-width="2" />
+              <path d="M1 15a14 14 0 0 1 14-14h490a14 14 0 0 1 14 14v16H1z" fill="#101b17" />
+              <circle cx="18" cy="16" r="4" fill="#ff5f57" />
+              <circle cx="32" cy="16" r="4" fill="#febc2e" />
+              <circle cx="46" cy="16" r="4" fill="#28c840" />
+              <text x="260" y="20" font-size="8" fill="#6b807a" text-anchor="middle">WarehOS — Inventario</text>
+
+              <rect x="1" y="31" width="118" height="308" fill="#0d1714" />
+              <rect x="14" y="46" width="22" height="22" rx="6" fill="url(#wgrad)" />
+              <text x="44" y="61" font-size="10" font-weight="700" fill="#e8f2ee">WarehOS</text>
+              <rect x="10" y="82" width="100" height="26" rx="7" fill="rgba(61,220,132,.13)" />
+              <text x="20" y="99" font-size="8" fill="#3ddc84">Inventario</text>
+              <text x="20" y="127" font-size="8" fill="#93a8a1">Movimientos</text>
+              <text x="20" y="155" font-size="8" fill="#93a8a1">Reportes</text>
+              <text x="20" y="183" font-size="8" fill="#93a8a1">Almacenes</text>
+              <text x="20" y="211" font-size="8" fill="#93a8a1">Auditoría</text>
+              <text x="20" y="239" font-size="8" fill="#93a8a1">Configuración</text>
+              <line x1="119" y1="31" x2="119" y2="339" stroke="rgba(255,255,255,.06)" />
+
+              <text x="134" y="58" font-size="14" font-weight="700" fill="#e8f2ee">Inventario</text>
+              <text x="134" y="72" font-size="7.5" fill="#6b807a">Resumen general · Octubre</text>
+
+              <g>
+                <rect x="134" y="84" width="118" height="52" rx="8" fill="#111a17" stroke="rgba(255,255,255,.06)" />
+                <text x="144" y="102" font-size="7" fill="#93a8a1">Productos</text>
+                <text x="144" y="122" font-size="15" font-weight="700" fill="#e8f2ee">1,248</text>
+                <text x="242" y="122" font-size="6.5" fill="#3ddc84" text-anchor="end">+12%</text>
+
+                <rect x="260" y="84" width="118" height="52" rx="8" fill="#111a17" stroke="rgba(255,255,255,.06)" />
+                <text x="270" y="102" font-size="7" fill="#93a8a1">Stock bajo</text>
+                <text x="270" y="122" font-size="15" font-weight="700" fill="#fcd34d">12</text>
+                <text x="368" y="122" font-size="6.5" fill="#fcd34d" text-anchor="end">revisar</text>
+
+                <rect x="386" y="84" width="118" height="52" rx="8" fill="#111a17" stroke="rgba(255,255,255,.06)" />
+                <text x="396" y="102" font-size="7" fill="#93a8a1">Valor total</text>
+                <text x="396" y="122" font-size="15" font-weight="700" fill="#7dd3fc">$48.2k</text>
+              </g>
+
+              <rect x="134" y="148" width="224" height="94" rx="8" fill="#111a17" stroke="rgba(255,255,255,.06)" />
+              <text x="144" y="164" font-size="7.5" fill="#93a8a1">Tendencia de stock (30 días)</text>
+              <g fill="#3ddc84">
+                <rect x="146" y="210" width="10" height="22" rx="2" opacity=".35" />
+                <rect x="164" y="202" width="10" height="30" rx="2" opacity=".45" />
+                <rect x="182" y="214" width="10" height="18" rx="2" opacity=".4" />
+                <rect x="200" y="194" width="10" height="38" rx="2" opacity=".55" />
+                <rect x="218" y="200" width="10" height="32" rx="2" opacity=".5" />
+                <rect x="236" y="186" width="10" height="46" rx="2" opacity=".7" />
+                <rect x="254" y="192" width="10" height="40" rx="2" opacity=".6" />
+                <rect x="272" y="178" width="10" height="54" rx="2" opacity=".9" />
+                <rect x="290" y="188" width="10" height="44" rx="2" opacity=".75" />
+                <rect x="308" y="174" width="10" height="58" rx="2" />
+              </g>
+
+              <rect x="366" y="148" width="140" height="94" rx="8" fill="#111a17" stroke="rgba(255,255,255,.06)" />
+              <text x="376" y="164" font-size="7.5" fill="#93a8a1">Stock bajo</text>
+              <g>
+                <circle cx="380" cy="181" r="2.5" fill="#fcd34d" />
+                <text x="388" y="184" font-size="7" fill="#c3d5ce">Tornillo M4</text>
+                <text x="498" y="184" font-size="7" fill="#fcd34d" text-anchor="end">3</text>
+                <circle cx="380" cy="199" r="2.5" fill="#fcd34d" />
+                <text x="388" y="202" font-size="7" fill="#c3d5ce">Cable AWG 12</text>
+                <text x="498" y="202" font-size="7" fill="#fcd34d" text-anchor="end">5</text>
+                <circle cx="380" cy="217" r="2.5" fill="#fcd34d" />
+                <text x="388" y="220" font-size="7" fill="#c3d5ce">Guantes L</text>
+                <text x="498" y="220" font-size="7" fill="#fcd34d" text-anchor="end">8</text>
+                <circle cx="380" cy="235" r="2.5" fill="#fcd34d" />
+                <text x="388" y="238" font-size="7" fill="#c3d5ce">Pintura negra</text>
+                <text x="498" y="238" font-size="7" fill="#fcd34d" text-anchor="end">2</text>
+              </g>
+
+              <text x="142" y="269" font-size="7" fill="#6b807a">Producto</text>
+              <text x="296" y="269" font-size="7" fill="#6b807a">SKU</text>
+              <text x="382" y="269" font-size="7" fill="#6b807a">Stock</text>
+              <text x="498" y="269" font-size="7" fill="#6b807a" text-anchor="end">Estado</text>
+
+              <rect x="134" y="276" width="372" height="26" rx="6" fill="#111a17" />
+              <text x="142" y="293" font-size="7.5" fill="#e8f2ee">Taladro 20V</text>
+              <text x="296" y="293" font-size="7.5" fill="#93a8a1">TAL-020</text>
+              <text x="382" y="293" font-size="7.5" fill="#e8f2ee">42</text>
+              <rect x="464" y="284" width="34" height="12" rx="6" fill="rgba(61,220,132,.16)" />
+              <text x="481" y="293" font-size="6.5" fill="#3ddc84" text-anchor="middle">OK</text>
+
+              <rect x="134" y="306" width="372" height="26" rx="6" fill="#111a17" />
+              <text x="142" y="323" font-size="7.5" fill="#e8f2ee">Cinta métrica 5m</text>
+              <text x="296" y="323" font-size="7.5" fill="#93a8a1">CIN-005</text>
+              <text x="382" y="323" font-size="7.5" fill="#e8f2ee">6</text>
+              <rect x="460" y="314" width="42" height="12" rx="6" fill="rgba(252,211,77,.16)" />
+              <text x="481" y="323" font-size="6.5" fill="#fcd34d" text-anchor="middle">BAJO</text>
+            </svg>
+          </div>
+
+          <div class="project-body">
+            <div class="project-topline">
+              <span class="tag tag-accent" data-i18n="projects.featured">Proyecto destacado</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3>WarehOS</h3>
+            <p class="project-subtitle" data-i18n="projects.p1.subtitle">Sistema de inventario de escritorio · 100% offline</p>
+            <p class="project-desc" data-i18n="projects.p1.desc">
+              Aplicación de escritorio multiplataforma para gestionar inventarios: productos, movimientos, múltiples
+              almacenes, lotes con vencimiento (FEFO), roles y permisos, auditoría, reportes PDF/CSV y copias de
+              seguridad cifradas.
+            </p>
+
+            <ul class="feature-list">
+              <li data-i18n="projects.p1.f1">Funciona 100% offline con base de datos SQLite local</li>
+              <li data-i18n="projects.p1.f2">Reportes PDF/CSV, etiquetas de código de barras y backups cifrados</li>
+              <li data-i18n="projects.p1.f3">Roles, auditoría y licenciamiento Pro por máquina</li>
+            </ul>
+
+            <div class="chips">
+              <span class="chip">Electron</span>
+              <span class="chip">React</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">SQLite</span>
+              <span class="chip">Tailwind</span>
+              <span class="chip">Zustand</span>
+              <span class="chip">Vite</span>
+            </div>
+
+            <div class="project-links">
+              <a class="btn btn-primary btn-sm" data-config-href="projectRepo" href="https://github.com/samuup/WarehOS" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.4 4.7 18.4 5 18.4 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+                <span data-i18n="projects.viewCode">Ver código</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 2: Control de Movimientos -->
+        <article class="project-featured project-featured--reverse reveal">
+          <div class="project-visual">
+            <svg class="phone" viewBox="0 0 280 560" role="img" aria-label="Mockup de la app Control de Movimientos">
+              <rect x="18" y="18" width="244" height="524" rx="40" fill="#0c1411" stroke="rgba(255,255,255,.12)" stroke-width="2" />
+              <rect x="28" y="28" width="224" height="504" rx="32" fill="#080f0d" />
+              <rect x="112" y="38" width="56" height="7" rx="3.5" fill="#1b2925" />
+              <text x="44" y="60" font-size="9" fill="#93a8a1">9:41</text>
+              <text x="208" y="60" font-size="9" fill="#93a8a1" text-anchor="end">▮▮▮</text>
+
+              <text x="44" y="96" font-size="16" font-weight="700" fill="#e8f2ee">Movimientos</text>
+              <text x="44" y="114" font-size="9" fill="#93a8a1">Planta · Hoy</text>
+
+              <rect x="44" y="128" width="92" height="60" rx="12" fill="rgba(61,220,132,.10)" stroke="rgba(61,220,132,.28)" />
+              <text x="56" y="157" font-size="20" font-weight="700" fill="#3ddc84">12</text>
+              <text x="56" y="174" font-size="8" fill="#93a8a1">Entradas</text>
+
+              <rect x="144" y="128" width="92" height="60" rx="12" fill="rgba(56,189,248,.08)" stroke="rgba(56,189,248,.24)" />
+              <text x="156" y="157" font-size="20" font-weight="700" fill="#38bdf8">8</text>
+              <text x="156" y="174" font-size="8" fill="#93a8a1">Salidas</text>
+
+              <text x="44" y="216" font-size="10" font-weight="600" fill="#c9d9d3">Recientes</text>
+
+              <g>
+                <rect x="44" y="228" width="192" height="46" rx="11" fill="#111a17" stroke="rgba(255,255,255,.06)" />
+                <rect x="54" y="238" width="26" height="26" rx="8" fill="rgba(61,220,132,.14)" />
+                <text x="67" y="256" font-size="9" font-weight="700" fill="#3ddc84" text-anchor="middle">A1</text>
+                <text x="90" y="248" font-size="9" font-weight="600" fill="#e8f2ee">AB123CD</text>
+                <text x="90" y="262" font-size="8" fill="#93a8a1">07:42 · Entrada</text>
+                <text x="222" y="255" font-size="10" fill="#5d726b" text-anchor="end">›</text>
+
+                <rect x="44" y="282" width="192" height="46" rx="11" fill="#111a17" stroke="rgba(255,255,255,.06)" />
+                <rect x="54" y="292" width="26" height="26" rx="8" fill="rgba(56,189,248,.14)" />
+                <text x="67" y="310" font-size="9" font-weight="700" fill="#38bdf8" text-anchor="middle">B2</text>
+                <text x="90" y="302" font-size="9" font-weight="600" fill="#e8f2ee">XY456ZW</text>
+                <text x="90" y="316" font-size="8" fill="#93a8a1">08:15 · Salida</text>
+                <text x="222" y="309" font-size="10" fill="#5d726b" text-anchor="end">›</text>
+
+                <rect x="44" y="336" width="192" height="46" rx="11" fill="#111a17" stroke="rgba(255,255,255,.06)" />
+                <rect x="54" y="346" width="26" height="26" rx="8" fill="rgba(61,220,132,.14)" />
+                <text x="67" y="364" font-size="9" font-weight="700" fill="#3ddc84" text-anchor="middle">A1</text>
+                <text x="90" y="356" font-size="9" font-weight="600" fill="#e8f2ee">AB123CD</text>
+                <text x="90" y="370" font-size="8" fill="#93a8a1">09:03 · Entrada</text>
+                <text x="222" y="363" font-size="10" fill="#5d726b" text-anchor="end">›</text>
+              </g>
+
+              <rect x="44" y="470" width="192" height="40" rx="14" fill="#111a17" stroke="rgba(255,255,255,.06)" />
+              <circle cx="70" cy="490" r="6" fill="#3ddc84" />
+              <circle cx="116" cy="490" r="6" fill="#2a3a35" />
+              <circle cx="162" cy="490" r="6" fill="#2a3a35" />
+              <circle cx="208" cy="490" r="6" fill="#2a3a35" />
+            </svg>
+          </div>
+
+          <div class="project-body">
+            <div class="project-topline">
+              <span class="tag" data-i18n="projects.p2.tag">Proyecto de pasantía</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3 data-i18n="projects.p2.title">Control de Movimientos</h3>
+            <p class="project-subtitle" data-i18n="projects.p2.subtitle">App Android para planta de procesamiento</p>
+            <p class="project-desc" data-i18n="projects.p2.desc">
+              Aplicación 100% offline para registrar la entrada y salida de camiones. Incluye autenticación local
+              con bloqueo tras intentos fallidos, gestión de camiones, cálculo automático de horas, dashboard con
+              métricas y exportación de reportes en PDF.
+            </p>
+
+            <ul class="feature-list">
+              <li data-i18n="projects.p2.f1">Funciona sin conexión a internet</li>
+              <li data-i18n="projects.p2.f2">Reportes exportables a PDF</li>
+              <li data-i18n="projects.p2.f3">Arquitectura MVVM con Room y Flow</li>
+            </ul>
+
+            <div class="chips">
+              <span class="chip">Kotlin</span>
+              <span class="chip">Jetpack Compose</span>
+              <span class="chip">Material 3</span>
+              <span class="chip">Room</span>
+              <span class="chip">MVVM</span>
+              <span class="chip">Coroutines</span>
+              <span class="chip">Navigation</span>
+              <span class="chip">DataStore</span>
+            </div>
+
+            <div class="project-links">
+              <span class="project-note" data-i18n="projects.p2.note">Código privado (proyecto de pasantía)</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-card-head">
+              <span class="project-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>
+              </span>
+              <span class="tag" data-i18n="projects.p3.status">Publicado</span>
+            </div>
+            <h3 data-i18n="projects.p3.title">Portafolio personal</h3>
+            <p data-i18n="projects.p3.desc">
+              Sitio estático bilingüe (ES/EN) sin frameworks ni dependencias de build. Este mismo sitio: rápido,
+              accesible y desplegado gratis en GitHub Pages.
+            </p>
+            <div class="chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">GitHub Pages</span>
+            </div>
+            <a class="text-link" data-config-href="siteRepo" href="https://github.com/samuup/portafolio" target="_blank" rel="noopener">
+              <span data-i18n="projects.viewRepo">Ver repositorio</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <a class="project-card project-card-cta reveal" data-config-href="github" href="https://github.com/samuup" target="_blank" rel="noopener">
+            <span class="cta-arrow" aria-hidden="true">↗</span>
+            <h3 data-i18n="projects.more.title">Más en GitHub</h3>
+            <p data-i18n="projects.more.desc">Experimentos, prácticas y proyectos en curso.</p>
+            <span class="text-link" data-i18n="projects.more.link">Ver perfil</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="skills.eyebrow">Habilidades</p>
+          <h2 data-i18n="skills.title">Con qué trabajo</h2>
+          <p class="section-lead" data-i18n="skills.lead">Tecnologías y herramientas que uso de forma habitual.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>
+              </span>
+              <h3 data-i18n="skills.languages">Lenguajes</h3>
+            </div>
+            <div class="chips">
+              <span class="chip">TypeScript</span>
+              <span class="chip">Kotlin</span>
+              <span class="chip">Java</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">SQL</span>
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </span>
+              <h3 data-i18n="skills.desktop">Escritorio</h3>
+            </div>
+            <div class="chips">
+              <span class="chip">Electron</span>
+              <span class="chip">React</span>
+              <span class="chip">Tailwind CSS</span>
+              <span class="chip">Zustand</span>
+              <span class="chip">Vite</span>
+              <span class="chip">SQLite</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M11 18h2"/></svg>
+              </span>
+              <h3 data-i18n="skills.android">Android</h3>
+            </div>
+            <div class="chips">
+              <span class="chip">Jetpack Compose</span>
+              <span class="chip">Material 3</span>
+              <span class="chip">Room</span>
+              <span class="chip">Navigation Compose</span>
+              <span class="chip">ViewModel</span>
+              <span class="chip">Coroutines &amp; Flow</span>
+              <span class="chip">DataStore</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5L21 21l-3 .5L8.5 12A4 4 0 0 1 4 6.5L7 4l3.5 3.5"/><path d="m3 21 4-4"/></svg>
+              </span>
+              <h3 data-i18n="skills.tools">Herramientas</h3>
+            </div>
+            <div class="chips">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">VS Code</span>
+              <span class="chip">Android Studio</span>
+              <span class="chip">Gradle</span>
+              <span class="chip">Vitest</span>
+              <span class="chip">Playwright</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="experience.eyebrow">Trayectoria</p>
+          <h2 data-i18n="experience.title">Experiencia y formación</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-date" data-i18n="experience.e1.date">2026</span>
+            <h3 data-i18n="experience.e1.title">Creador de WarehOS — Proyecto personal</h3>
+            <p class="timeline-org" data-i18n="experience.e1.org">Aplicación de escritorio</p>
+            <p data-i18n="experience.e1.desc">
+              Diseño y desarrollo de un sistema de inventario multiplataforma con Electron, React y TypeScript:
+              base de datos local cifrada, control de roles, auditoría, reportes y empaquetado para Windows,
+              macOS y Linux.
+            </p>
+            <div class="chips">
+              <span class="chip">Electron</span>
+              <span class="chip">React</span>
+              <span class="chip">TypeScript</span>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-date" data-i18n="experience.e2.date">2026</span>
+            <h3 data-i18n="experience.e2.title">Desarrollador Android — Proyecto de pasantía</h3>
+            <p class="timeline-org" data-i18n="experience.e2.org">Ferrominera Orinoco</p>
+            <p data-i18n="experience.e2.desc">
+              Desarrollo de un prototipo offline para el control de movimientos de camiones: diseño de la base de
+              datos, capa de repositorios, interfaz en Jetpack Compose y generación de reportes PDF.
+            </p>
+            <div class="chips">
+              <span class="chip">Kotlin</span>
+              <span class="chip">Compose</span>
+              <span class="chip">Room</span>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-date" data-i18n="experience.e3.date">Formación</span>
+            <h3 data-i18n="experience.e3.title">Formación en desarrollo de software</h3>
+            <p class="timeline-org" data-i18n="experience.e3.org">Tu institución</p>
+            <p data-i18n="experience.e3.desc">
+              Estudios y cursos enfocados en programación, desarrollo de software y tecnologías móviles.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
+          <h2 data-i18n="contact.title">¿Construimos algo juntos?</h2>
+          <p class="contact-lead" data-i18n="contact.lead">
+            Estoy abierto a oportunidades, colaboraciones y proyectos freelance. Escríbeme y te respondo lo antes posible.
+          </p>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" data-config-href="emailLink" href="mailto:samuelpradouribe@gmail.com">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <span data-i18n="contact.emailBtn">Enviar un correo</span>
+            </a>
+            <button class="btn btn-ghost" type="button" id="copyEmail">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+              <span data-i18n="contact.copy">Copiar correo</span>
+            </button>
+          </div>
+
+          <div class="contact-links">
+            <span data-i18n="contact.note">También puedes encontrarme en</span>
+            <a data-config-href="github" href="https://github.com/samuup" target="_blank" rel="noopener">GitHub</a>
+            <a data-config-href="linkedin" href="#" target="_blank" rel="noopener" hidden>LinkedIn</a>
+            <a data-config-href="emailLink" href="mailto:samuelpradouribe@gmail.com" data-config="email">samuelpradouribe@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> <span data-config="name">Samuel Prado</span></p>
+      <p class="footer-note">
+        <span data-i18n="footer.made">Diseñado y construido con HTML, CSS y JavaScript.</span>
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <span data-i18n="footer.deployed">Desplegado en GitHub Pages</span>
+      </p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
