@@ -745,6 +745,11 @@ dd {
   letter-spacing: 0.01em;
 }
 
+.project-card .project-note {
+  margin-top: auto;
+  padding-top: 1.1rem;
+}
+
 .project-note::before {
   content: "";
   width: 6px;

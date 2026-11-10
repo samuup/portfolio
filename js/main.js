@@ -12,21 +12,21 @@ const CONFIG = {
   initials: "SP", // vacío = se calcula desde el nombre
   email: "samuelpradouribe@gmail.com",
   github: "https://github.com/samuup",
-  linkedin: "", // opcional; si lo dejas vacío se oculta
-  location: "Venezuela",
+  linkedin: "https://www.linkedin.com/in/samuel-prado-994940326",
+  location: "Ciudad Guayana, Venezuela",
   photo: "", // ej: "assets/foto.jpg". Vacío = muestra iniciales
 
-  projectRepo: "https://github.com/samuup/WarehOS", // repo del proyecto destacado
-  siteRepo: "https://github.com/samuup/portafolio", // repo de este sitio
+  projectRepo: "https://github.com/samuup/WarehOS", // repo de WarehOS
+  siteRepo: "https://github.com/samuup/samuup.github.io", // repo de este sitio
 };
 
 /* -------------------------- 2. TRADUCCIONES -------------------------- */
 
 const TRANSLATIONS = {
   es: {
-    "meta.role": "Desarrollador Web",
+    "meta.role": "Desarrollador Full-Stack",
     "meta.description":
-      "Portafolio de Samuel Prado, desarrollador web con Python, PostgreSQL y React. También apps de escritorio y Android.",
+      "Portafolio de Samuel Prado, desarrollador full-stack con Python, Django, Node.js, React y PostgreSQL. También apps de escritorio y Android.",
 
     "a11y.skip": "Saltar al contenido",
     "a11y.langToggle": "Cambiar a inglés",
@@ -42,9 +42,9 @@ const TRANSLATIONS = {
     "nav.contact": "Contacto",
 
     "hero.badge": "Disponible para nuevos retos",
-    "hero.title": 'Desarrollo web <span class="grad">de la base de datos a la interfaz</span>.',
+    "hero.title": 'Desarrollo full-stack <span class="grad">de la base de datos a la interfaz</span>.',
     "hero.lead":
-      "Soy desarrollador web. Trabajo con Python y PostgreSQL en el backend, y con HTML, CSS, JavaScript y React en el frontend. Cuando el proyecto lo pide, también construyo apps de escritorio y Android.",
+      "Soy desarrollador full-stack. Construyo aplicaciones web con Python, Django y Node.js en el backend, PostgreSQL, MySQL y MongoDB para los datos, y React en el frontend. Cuando el proyecto lo pide, también creo apps de escritorio y Android.",
     "hero.cta.projects": "Ver proyectos",
     "hero.cta.contact": "Hablemos",
     "hero.code.status": "compilando ideas…",
@@ -52,14 +52,14 @@ const TRANSLATIONS = {
     "about.eyebrow": "Sobre mí",
     "about.title": "Código claro, apps que funcionan",
     "about.p1":
-      "Me enfoco en desarrollo web: backend con Python y PostgreSQL, y frontend con HTML, CSS, JavaScript, TypeScript y React. Me importan la arquitectura, el rendimiento y que la interfaz se entienda sin manual.",
+      "Soy desarrollador full-stack. Me muevo con comodidad entre el backend (Python/Django, Node.js), las bases de datos (PostgreSQL, MySQL, MongoDB, Cassandra, Neo4j) y el frontend (React, JavaScript, TypeScript). Me importan la arquitectura, el rendimiento y que la interfaz se entienda sin manual.",
     "about.p2":
-      "He construido WarehOS, un sistema de inventario de escritorio con múltiples almacenes, lotes y vencimientos, roles, auditoría, reportes PDF/CSV y copias de seguridad cifradas. También una app Android 100% offline para el control de movimientos de camiones en una planta de procesamiento de mineral de hierro. Proyectos con restricciones reales que me obligaron a cuidar los datos y a diseñar interfaces claras.",
+      "He construido Bella Napoli, una web para una pizzería que automatiza los pedidos con panel de administración, CRUD y autenticación validada. También WarehOS, un sistema de inventario de escritorio con múltiples almacenes, roles, auditoría y reportes, y una app Android 100% offline para el control de movimientos de camiones en una planta de procesamiento.",
     "about.p3":
-      "Ahora busco seguir creciendo en equipos donde pueda aportar en producto, arquitectura y calidad de código, mientras aprendo de otros desarrolladores.",
+      "Curso el séptimo semestre de Ingeniería en Informática en la UNEG. Busco mi primera oportunidad profesional para aportar en producto, arquitectura y calidad de código, y seguir aprendiendo de otros desarrolladores.",
     "about.facts.location": "Ubicación",
     "about.facts.focus": "Enfoque",
-    "about.facts.focusValue": "Desarrollo web · Backend y datos",
+    "about.facts.focusValue": "Desarrollo full-stack",
     "about.facts.stack": "Stack principal",
     "about.facts.languages": "Idiomas",
     "about.facts.languagesValue": "Español · Inglés",
@@ -69,25 +69,33 @@ const TRANSLATIONS = {
     "projects.lead":
       "Proyectos reales, con restricciones reales. Cada uno me enseñó algo distinto sobre producto y código.",
     "projects.featured": "Proyecto destacado",
-    "projects.p1.subtitle": "Sistema de inventario de escritorio · 100% offline",
+    "projects.p1.subtitle": "Web de pedidos para pizzería · Full-stack",
     "projects.p1.desc":
-      "Aplicación de escritorio multiplataforma para gestionar inventarios: productos, movimientos, múltiples almacenes, lotes con vencimiento (FEFO), roles y permisos, auditoría, reportes PDF/CSV y copias de seguridad cifradas.",
-    "projects.p1.f1": "Funciona 100% offline con base de datos SQLite local",
-    "projects.p1.f2": "Reportes PDF/CSV, etiquetas de código de barras y backups cifrados",
-    "projects.p1.f3": "Roles, auditoría y licenciamiento Pro por máquina",
-    "projects.viewCode": "Ver código",
-    "projects.p2.tag": "Proyecto de pasantía",
-    "projects.p2.title": "Control de Movimientos",
-    "projects.p2.subtitle": "App Android para planta de procesamiento",
+      "Aplicación web que automatiza los pedidos de una pizzería: los clientes arman su pedido y el local lo gestiona desde un panel de administración con CRUD completo. Incluye autenticación y registro con validación de datos.",
+    "projects.p1.f1": "Flujo de pedidos automatizado, del carrito a la cocina",
+    "projects.p1.f2": "Panel de administración con CRUD de productos y pedidos",
+    "projects.p1.f3": "Login y registro con validación de datos",
+    "projects.p1.note": "Código privado · puedo mostrarlo en una entrevista",
+    "projects.p2.tag": "Proyecto personal",
+    "projects.p2.subtitle": "Sistema de inventario de escritorio · 100% offline",
     "projects.p2.desc":
-      "Aplicación 100% offline para registrar la entrada y salida de camiones. Incluye autenticación local con bloqueo tras intentos fallidos, gestión de camiones, cálculo automático de horas, dashboard con métricas y exportación de reportes en PDF.",
-    "projects.p2.f1": "Funciona sin conexión a internet",
-    "projects.p2.f2": "Reportes exportables a PDF",
-    "projects.p2.f3": "Arquitectura MVVM con Room y Flow",
-    "projects.p2.note": "Código privado (proyecto de pasantía)",
-    "projects.p3.status": "Publicado",
-    "projects.p3.title": "Portafolio personal",
+      "Aplicación de escritorio multiplataforma para gestionar inventarios: productos, movimientos, múltiples almacenes, lotes con vencimiento (FEFO), roles y permisos, auditoría, reportes PDF/CSV y copias de seguridad cifradas.",
+    "projects.p2.f1": "Funciona 100% offline con base de datos SQLite local",
+    "projects.p2.f2": "Reportes PDF/CSV, etiquetas de código de barras y backups cifrados",
+    "projects.p2.f3": "Roles, auditoría y licenciamiento Pro por máquina",
+    "projects.viewCode": "Ver código",
+    "projects.p3.tag": "Prototipo funcional",
+    "projects.p3.title": "Control de Movimientos",
+    "projects.p3.subtitle": "App Android para planta de procesamiento",
     "projects.p3.desc":
+      "Aplicación 100% offline para registrar la entrada y salida de camiones. Incluye autenticación local con bloqueo tras intentos fallidos, gestión de camiones, cálculo automático de horas, dashboard con métricas y exportación de reportes en PDF.",
+    "projects.p3.f1": "Funciona sin conexión a internet",
+    "projects.p3.f2": "Reportes exportables a PDF",
+    "projects.p3.f3": "Arquitectura MVVM con Room y Flow",
+    "projects.p3.note": "Código privado",
+    "projects.p4.status": "Publicado",
+    "projects.p4.title": "Portafolio personal",
+    "projects.p4.desc":
       "Sitio estático bilingüe (ES/EN) sin frameworks ni dependencias de build. Este mismo sitio: rápido, accesible y desplegado gratis en GitHub Pages.",
     "projects.viewRepo": "Ver repositorio",
     "projects.more.title": "Más en GitHub",
@@ -106,25 +114,30 @@ const TRANSLATIONS = {
     "experience.eyebrow": "Trayectoria",
     "experience.title": "Experiencia y formación",
     "experience.e1.date": "2026",
-    "experience.e1.title": "Creador de WarehOS — Proyecto personal",
-    "experience.e1.org": "Aplicación de escritorio",
+    "experience.e1.title": "Bella Napoli — Proyecto personal",
+    "experience.e1.org": "Aplicación web full-stack",
     "experience.e1.desc":
-      "Diseño y desarrollo de un sistema de inventario multiplataforma con Electron, React y TypeScript: base de datos local cifrada, control de roles, auditoría, reportes y empaquetado para Windows, macOS y Linux.",
+      "Diseño y desarrollo de una web de pedidos para una pizzería: panel de administración con CRUD de productos y pedidos, autenticación y registro con validación de datos, y automatización del flujo de pedidos.",
     "experience.e2.date": "2026",
-    "experience.e2.title": "Desarrollador Android — Proyecto de pasantía",
-    "experience.e2.org": "Ferrominera Orinoco",
+    "experience.e2.title": "Creador de WarehOS — Proyecto personal",
+    "experience.e2.org": "Aplicación de escritorio",
     "experience.e2.desc":
-      "Desarrollo de un prototipo offline para el control de movimientos de camiones: diseño de la base de datos, capa de repositorios, interfaz en Jetpack Compose y generación de reportes PDF.",
-    "experience.e3.date": "Formación",
-    "experience.e3.title": "Formación en desarrollo de software",
-    "experience.e3.org": "Tu institución",
+      "Diseño y desarrollo de un sistema de inventario multiplataforma con Electron, React y TypeScript: base de datos local cifrada, control de roles, auditoría, reportes y empaquetado para Windows, macOS y Linux.",
+    "experience.e3.date": "2026",
+    "experience.e3.title": "Control de Movimientos — Prototipo Android",
+    "experience.e3.org": "App offline para planta de procesamiento",
     "experience.e3.desc":
-      "Estudios y cursos enfocados en programación, desarrollo de software y tecnologías móviles.",
+      "Desarrollo de un prototipo offline para el control de movimientos de camiones: diseño de la base de datos, capa de repositorios, interfaz en Jetpack Compose y generación de reportes PDF.",
+    "experience.e4.date": "En curso",
+    "experience.e4.title": "Ingeniería en Informática",
+    "experience.e4.org": "Universidad Nacional Experimental de Guayana (UNEG)",
+    "experience.e4.desc":
+      "Séptimo semestre. Formación en programación, bases de datos, ingeniería de software y desarrollo de aplicaciones.",
 
     "contact.eyebrow": "Contacto",
     "contact.title": "¿Construimos algo juntos?",
     "contact.lead":
-      "Estoy abierto a oportunidades, colaboraciones y proyectos freelance. Escríbeme y te respondo lo antes posible.",
+      "Estoy buscando mi primera oportunidad como desarrollador full-stack. También estoy abierto a colaboraciones y proyectos freelance. Escríbeme y te respondo lo antes posible.",
     "contact.emailBtn": "Enviar un correo",
     "contact.copy": "Copiar correo",
     "contact.note": "También puedes encontrarme en",
@@ -137,9 +150,9 @@ const TRANSLATIONS = {
   },
 
   en: {
-    "meta.role": "Web Developer",
+    "meta.role": "Full-Stack Developer",
     "meta.description":
-      "Portfolio of Samuel Prado, a web developer working with Python, PostgreSQL and React. Also desktop and Android apps.",
+      "Portfolio of Samuel Prado, a full-stack developer working with Python, Django, Node.js, React and PostgreSQL. Also desktop and Android apps.",
 
     "a11y.skip": "Skip to content",
     "a11y.langToggle": "Switch to Spanish",
@@ -155,9 +168,9 @@ const TRANSLATIONS = {
     "nav.contact": "Contact",
 
     "hero.badge": "Open to new challenges",
-    "hero.title": 'Web development <span class="grad">from database to interface</span>.',
+    "hero.title": 'Full-stack development <span class="grad">from database to interface</span>.',
     "hero.lead":
-      "I'm a web developer. I work with Python and PostgreSQL on the backend, and HTML, CSS, JavaScript and React on the frontend. When a project calls for it, I also build desktop and Android apps.",
+      "I'm a full-stack developer. I build web applications with Python, Django and Node.js on the backend, PostgreSQL, MySQL and MongoDB for data, and React on the frontend. When a project calls for it, I also build desktop and Android apps.",
     "hero.cta.projects": "View projects",
     "hero.cta.contact": "Let's talk",
     "hero.code.status": "compiling ideas…",
@@ -165,14 +178,14 @@ const TRANSLATIONS = {
     "about.eyebrow": "About me",
     "about.title": "Clear code, apps that work",
     "about.p1":
-      "I focus on web development: backend with Python and PostgreSQL, and frontend with HTML, CSS, JavaScript, TypeScript and React. I care about architecture, performance, and interfaces that make sense without a manual.",
+      "I'm a full-stack developer. I move comfortably between the backend (Python/Django, Node.js), databases (PostgreSQL, MySQL, MongoDB, Cassandra, Neo4j) and the frontend (React, JavaScript, TypeScript). I care about architecture, performance, and interfaces that make sense without a manual.",
     "about.p2":
-      "I've built WarehOS, a desktop inventory system with multiple warehouses, batches and expiry dates, roles, auditing, PDF/CSV reports and encrypted backups. I also built a fully offline Android app to track truck movements at an iron ore processing plant. Real-world projects that forced me to take care of the data and design clear interfaces.",
+      "I've built Bella Napoli, a pizzeria website that automates orders with an admin panel, CRUD and validated authentication. I also built WarehOS, a desktop inventory system with multiple warehouses, roles, auditing and reports, and a fully offline Android app to track truck movements at a processing plant.",
     "about.p3":
-      "I'm now looking to keep growing in teams where I can contribute to product, architecture and code quality while learning from other developers.",
+      "I'm in my seventh semester of Computer Engineering at UNEG. I'm looking for my first professional opportunity to contribute to product, architecture and code quality while learning from other developers.",
     "about.facts.location": "Location",
     "about.facts.focus": "Focus",
-    "about.facts.focusValue": "Web development · Backend & data",
+    "about.facts.focusValue": "Full-stack development",
     "about.facts.stack": "Main stack",
     "about.facts.languages": "Languages",
     "about.facts.languagesValue": "Spanish · English",
@@ -182,25 +195,33 @@ const TRANSLATIONS = {
     "projects.lead":
       "Real projects with real constraints. Each one taught me something different about product and code.",
     "projects.featured": "Featured project",
-    "projects.p1.subtitle": "Desktop inventory system · 100% offline",
+    "projects.p1.subtitle": "Pizzeria ordering website · Full-stack",
     "projects.p1.desc":
-      "A cross-platform desktop application to manage inventory: products, movements, multiple warehouses, batches with expiry (FEFO), roles and permissions, auditing, PDF/CSV reports and encrypted backups.",
-    "projects.p1.f1": "Runs 100% offline with a local SQLite database",
-    "projects.p1.f2": "PDF/CSV reports, barcode labels and encrypted backups",
-    "projects.p1.f3": "Roles, auditing and per-machine Pro licensing",
-    "projects.viewCode": "View code",
-    "projects.p2.tag": "Internship project",
-    "projects.p2.title": "Truck Movement Control",
-    "projects.p2.subtitle": "Android app for a processing plant",
+      "A web application that automates a pizzeria's orders: customers build their order and the restaurant manages it from an admin panel with full CRUD. It includes authentication and registration with data validation.",
+    "projects.p1.f1": "Automated order flow, from cart to kitchen",
+    "projects.p1.f2": "Admin panel with CRUD for products and orders",
+    "projects.p1.f3": "Login and registration with data validation",
+    "projects.p1.note": "Private code · happy to walk through it in an interview",
+    "projects.p2.tag": "Personal project",
+    "projects.p2.subtitle": "Desktop inventory system · 100% offline",
     "projects.p2.desc":
-      "A fully offline application to log truck check-ins and check-outs. It includes local authentication with lockout after failed attempts, truck management, automatic hour calculation, a metrics dashboard and PDF report export.",
-    "projects.p2.f1": "Works without an internet connection",
-    "projects.p2.f2": "Reports exportable to PDF",
-    "projects.p2.f3": "MVVM architecture with Room and Flow",
-    "projects.p2.note": "Private code (internship project)",
-    "projects.p3.status": "Live",
-    "projects.p3.title": "Personal portfolio",
+      "A cross-platform desktop application to manage inventory: products, movements, multiple warehouses, batches with expiry (FEFO), roles and permissions, auditing, PDF/CSV reports and encrypted backups.",
+    "projects.p2.f1": "Runs 100% offline with a local SQLite database",
+    "projects.p2.f2": "PDF/CSV reports, barcode labels and encrypted backups",
+    "projects.p2.f3": "Roles, auditing and per-machine Pro licensing",
+    "projects.viewCode": "View code",
+    "projects.p3.tag": "Working prototype",
+    "projects.p3.title": "Truck Movement Control",
+    "projects.p3.subtitle": "Android app for a processing plant",
     "projects.p3.desc":
+      "A fully offline application to log truck check-ins and check-outs. It includes local authentication with lockout after failed attempts, truck management, automatic hour calculation, a metrics dashboard and PDF report export.",
+    "projects.p3.f1": "Works without an internet connection",
+    "projects.p3.f2": "Reports exportable to PDF",
+    "projects.p3.f3": "MVVM architecture with Room and Flow",
+    "projects.p3.note": "Private code",
+    "projects.p4.status": "Live",
+    "projects.p4.title": "Personal portfolio",
+    "projects.p4.desc":
       "A bilingual (ES/EN) static site with no frameworks or build dependencies. This very site: fast, accessible and deployed for free on GitHub Pages.",
     "projects.viewRepo": "View repository",
     "projects.more.title": "More on GitHub",
@@ -219,25 +240,30 @@ const TRANSLATIONS = {
     "experience.eyebrow": "Experience",
     "experience.title": "Experience & education",
     "experience.e1.date": "2026",
-    "experience.e1.title": "Creator of WarehOS — Personal project",
-    "experience.e1.org": "Desktop application",
+    "experience.e1.title": "Bella Napoli — Personal project",
+    "experience.e1.org": "Full-stack web application",
     "experience.e1.desc":
-      "Designed and built a cross-platform inventory system with Electron, React and TypeScript: encrypted local database, role-based access, auditing, reports and packaging for Windows, macOS and Linux.",
+      "Designed and built a pizzeria ordering website: admin panel with CRUD for products and orders, authentication and registration with data validation, and an automated order flow.",
     "experience.e2.date": "2026",
-    "experience.e2.title": "Android Developer — Internship project",
-    "experience.e2.org": "Ferrominera Orinoco",
+    "experience.e2.title": "Creator of WarehOS — Personal project",
+    "experience.e2.org": "Desktop application",
     "experience.e2.desc":
-      "Built an offline prototype to track truck movements: database design, repository layer, Jetpack Compose UI and PDF report generation.",
-    "experience.e3.date": "Education",
-    "experience.e3.title": "Software development training",
-    "experience.e3.org": "Your institution",
+      "Designed and built a cross-platform inventory system with Electron, React and TypeScript: encrypted local database, role-based access, auditing, reports and packaging for Windows, macOS and Linux.",
+    "experience.e3.date": "2026",
+    "experience.e3.title": "Truck Movement Control — Android prototype",
+    "experience.e3.org": "Offline app for a processing plant",
     "experience.e3.desc":
-      "Studies and courses focused on programming, software development and mobile technologies.",
+      "Built an offline prototype to track truck movements: database design, repository layer, Jetpack Compose UI and PDF report generation.",
+    "experience.e4.date": "In progress",
+    "experience.e4.title": "Computer Engineering",
+    "experience.e4.org": "Universidad Nacional Experimental de Guayana (UNEG)",
+    "experience.e4.desc":
+      "Seventh semester. Coursework in programming, databases, software engineering and application development.",
 
     "contact.eyebrow": "Contact",
     "contact.title": "Let's build something together?",
     "contact.lead":
-      "I'm open to opportunities, collaborations and freelance projects. Send me a message and I'll get back to you as soon as I can.",
+      "I'm looking for my first opportunity as a full-stack developer. I'm also open to collaborations and freelance projects. Send me a message and I'll get back to you as soon as I can.",
     "contact.emailBtn": "Send an email",
     "contact.copy": "Copy email",
     "contact.note": "You can also find me on",
@@ -296,8 +322,8 @@ function applyConfig() {
       el.setAttribute("href", href);
     }
 
-    if (key === "linkedin" && !CONFIG.linkedin) {
-      el.hidden = true;
+    if (key === "linkedin") {
+      el.hidden = !CONFIG.linkedin;
     }
   });
 

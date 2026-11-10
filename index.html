@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="dark" />
   <meta name="theme-color" content="#070b0a" />
-  <title>Samuel Prado — Desarrollador Web</title>
-  <meta name="description" content="Portafolio de Samuel Prado, desarrollador web con Python, PostgreSQL y React. También apps de escritorio y Android." />
+  <title>Samuel Prado — Desarrollador Full-Stack</title>
+  <meta name="description" content="Portafolio de Samuel Prado, desarrollador full-stack con Python, Django, Node.js, React y PostgreSQL. También apps de escritorio y Android." />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Samuel Prado — Desarrollador Web" />
-  <meta property="og:description" content="Desarrollo web de la base de datos a la interfaz: Python, PostgreSQL y React." />
+  <meta property="og:title" content="Samuel Prado — Desarrollador Full-Stack" />
+  <meta property="og:description" content="Desarrollo full-stack de la base de datos a la interfaz: Python, Django, React y PostgreSQL." />
   <meta property="og:locale" content="es_ES" />
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
@@ -66,11 +66,12 @@
             <span data-i18n="hero.badge">Disponible para nuevos retos</span>
           </p>
 
-          <h1 data-i18n-html="hero.title">Desarrollo web <span class="grad">de la base de datos a la interfaz</span>.</h1>
+          <h1 data-i18n-html="hero.title">Desarrollo full-stack <span class="grad">de la base de datos a la interfaz</span>.</h1>
 
           <p class="lead" data-i18n="hero.lead">
-            Soy desarrollador web. Trabajo con Python y PostgreSQL en el backend, y con HTML, CSS, JavaScript y
-            React en el frontend. Cuando el proyecto lo pide, también construyo apps de escritorio y Android.
+            Soy desarrollador full-stack. Construyo aplicaciones web con Python, Django y Node.js en el backend,
+            PostgreSQL, MySQL y MongoDB para los datos, y React en el frontend. Cuando el proyecto lo pide, también
+            creo apps de escritorio y Android.
           </p>
 
           <div class="hero-actions">
@@ -105,9 +106,10 @@
             </div>
             <pre class="code"><code><span class="c-key">class</span> <span class="c-type">Developer</span>:
     name = <span class="c-str">"<span data-config="name">Samuel Prado</span>"</span>
-    role = <span class="c-str">"Web Developer"</span>
-    stack = [<span class="c-str">"Python"</span>, <span class="c-str">"PostgreSQL"</span>,
-             <span class="c-str">"React"</span>, <span class="c-str">"TypeScript"</span>]
+    role = <span class="c-str">"Full-stack Developer"</span>
+    stack = [<span class="c-str">"Python"</span>, <span class="c-str">"Django"</span>,
+             <span class="c-str">"Node.js"</span>, <span class="c-str">"React"</span>,
+             <span class="c-str">"PostgreSQL"</span>]
     focus = <span class="c-str">"Backend &amp; data"</span>
 
     <span class="c-key">def</span> <span class="c-fn">available</span>(self) -&gt; <span class="c-type">bool</span>:
@@ -132,20 +134,20 @@
         <div class="about-grid">
           <div class="about-text reveal">
             <p data-i18n="about.p1">
-              Me enfoco en desarrollo web: backend con Python y PostgreSQL, y frontend con HTML, CSS, JavaScript,
-              TypeScript y React. Me importan la arquitectura, el rendimiento y que la interfaz se entienda sin
-              manual.
+              Soy desarrollador full-stack. Me muevo con comodidad entre el backend (Python/Django, Node.js), las
+              bases de datos (PostgreSQL, MySQL, MongoDB, Cassandra, Neo4j) y el frontend (React, JavaScript,
+              TypeScript). Me importan la arquitectura, el rendimiento y que la interfaz se entienda sin manual.
             </p>
             <p data-i18n="about.p2">
-              He construido WarehOS, un sistema de inventario de escritorio con múltiples almacenes, lotes y
-              vencimientos, roles, auditoría, reportes PDF/CSV y copias de seguridad cifradas. También una app
-              Android 100% offline para el control de movimientos de camiones en una planta de procesamiento de
-              mineral de hierro. Proyectos con restricciones reales que me obligaron a cuidar los datos y a diseñar
-              interfaces claras.
+              He construido Bella Napoli, una web para una pizzería que automatiza los pedidos con panel de
+              administración, CRUD y autenticación validada. También WarehOS, un sistema de inventario de escritorio
+              con múltiples almacenes, roles, auditoría y reportes, y una app Android 100% offline para el control de
+              movimientos de camiones en una planta de procesamiento.
             </p>
             <p data-i18n="about.p3">
-              Ahora busco seguir creciendo en equipos donde pueda aportar en producto, arquitectura y calidad de
-              código, mientras aprendo de otros desarrolladores.
+              Curso el séptimo semestre de Ingeniería en Informática en la UNEG. Busco mi primera oportunidad
+              profesional para aportar en producto, arquitectura y calidad de código, y seguir aprendiendo de otros
+              desarrolladores.
             </p>
           </div>
 
@@ -156,15 +158,15 @@
             <dl class="facts">
               <div class="fact">
                 <dt data-i18n="about.facts.location">Ubicación</dt>
-                <dd data-config="location">Venezuela</dd>
+                <dd data-config="location">Ciudad Guayana, Venezuela</dd>
               </div>
               <div class="fact">
                 <dt data-i18n="about.facts.focus">Enfoque</dt>
-                <dd data-i18n="about.facts.focusValue">Desarrollo web · Backend y datos</dd>
+                <dd data-i18n="about.facts.focusValue">Desarrollo full-stack</dd>
               </div>
               <div class="fact">
                 <dt data-i18n="about.facts.stack">Stack principal</dt>
-                <dd>Python · PostgreSQL · React</dd>
+                <dd>Python · Django · React · PostgreSQL</dd>
               </div>
               <div class="fact">
                 <dt data-i18n="about.facts.languages">Idiomas</dt>
@@ -187,8 +189,143 @@
           </p>
         </div>
 
-        <!-- Proyecto 1: WarehOS -->
+        <!-- Proyecto 1: Bella Napoli -->
         <article class="project-featured reveal">
+          <div class="project-visual project-visual--desktop">
+            <svg class="app-window" viewBox="0 0 520 340" role="img" aria-label="Bella Napoli: web de pedidos con carrito y panel de administración">
+              <defs>
+                <linearGradient id="bncrust" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#f6c26b" />
+                  <stop offset="1" stop-color="#dd9a3f" />
+                </linearGradient>
+                <linearGradient id="bnbtn" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#f97316" />
+                  <stop offset="1" stop-color="#ef4444" />
+                </linearGradient>
+              </defs>
+              <rect x="1" y="1" width="518" height="338" rx="14" fill="#120e0c" stroke="rgba(255,255,255,.13)" stroke-width="2" />
+              <path d="M1 15a14 14 0 0 1 14-14h490a14 14 0 0 1 14 14v16H1z" fill="#1a1512" />
+              <circle cx="18" cy="16" r="4" fill="#ff5f57" />
+              <circle cx="32" cy="16" r="4" fill="#febc2e" />
+              <circle cx="46" cy="16" r="4" fill="#28c840" />
+              <rect x="150" y="8" width="220" height="16" rx="8" fill="#0f0b09" stroke="rgba(255,255,255,.06)" />
+              <text x="260" y="19" font-size="7.5" fill="#a89686" text-anchor="middle">bellanapoli.app/menu</text>
+
+              <text x="20" y="54" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#f8e3c9">Bella Napoli</text>
+              <text x="20" y="66" font-size="5.5" letter-spacing="2.2" fill="#c98b5a">PIZZERÍA ARTESANAL</text>
+              <text x="326" y="54" font-size="8" fill="#cbb6a5">Menú</text>
+              <text x="362" y="54" font-size="8" fill="#cbb6a5">Promos</text>
+              <text x="404" y="54" font-size="8" fill="#cbb6a5">Nosotros</text>
+              <rect x="448" y="41" width="56" height="22" rx="11" fill="url(#bnbtn)" />
+              <text x="476" y="55" font-size="7.5" font-weight="700" fill="#fff" text-anchor="middle">Carrito 2</text>
+              <line x1="1" y1="76" x2="519" y2="76" stroke="rgba(255,255,255,.07)" />
+
+              <text x="20" y="101" font-size="6.5" letter-spacing="1.6" fill="#f97316">PEDIDOS EN LÍNEA</text>
+              <text x="20" y="126" font-family="Georgia, serif" font-size="19" font-weight="700" fill="#f8e3c9">Pizza artesanal,</text>
+              <text x="20" y="148" font-family="Georgia, serif" font-size="19" font-weight="700" fill="#f8e3c9">directo a tu mesa.</text>
+              <text x="20" y="166" font-size="7.5" fill="#a89686">Arma tu pedido, paga en línea y sigue su estado.</text>
+              <rect x="20" y="180" width="88" height="24" rx="12" fill="url(#bnbtn)" />
+              <text x="64" y="195" font-size="7.5" font-weight="700" fill="#fff" text-anchor="middle">Ordenar ahora</text>
+              <rect x="116" y="180" width="70" height="24" rx="12" fill="none" stroke="rgba(249,115,22,.45)" />
+              <text x="151" y="195" font-size="7.5" fill="#f6b17a" text-anchor="middle">Ver menú</text>
+
+              <ellipse cx="424" cy="196" rx="52" ry="9" fill="#000" opacity=".35" />
+              <circle cx="424" cy="140" r="46" fill="url(#bncrust)" />
+              <circle cx="424" cy="140" r="36" fill="#e85d3d" />
+              <circle cx="424" cy="140" r="33" fill="#f2c14e" opacity=".92" />
+              <circle cx="412" cy="126" r="5" fill="#c0392b" />
+              <circle cx="438" cy="129" r="5" fill="#c0392b" />
+              <circle cx="416" cy="154" r="5" fill="#c0392b" />
+              <circle cx="438" cy="152" r="5" fill="#c0392b" />
+              <ellipse cx="424" cy="140" rx="4" ry="2.4" fill="#3f8f4a" transform="rotate(-25 424 140)" />
+              <ellipse cx="431" cy="143" rx="3.4" ry="2" fill="#3f8f4a" transform="rotate(20 431 143)" />
+
+              <text x="20" y="222" font-size="10" font-weight="700" fill="#f8e3c9">Más pedidas</text>
+              <text x="502" y="222" font-size="7" fill="#c98b5a" text-anchor="end">Ver todo →</text>
+
+              <rect x="18" y="232" width="104" height="94" rx="10" fill="#1a1512" stroke="rgba(255,255,255,.07)" />
+              <circle cx="70" cy="256" r="16" fill="url(#bncrust)" />
+              <circle cx="70" cy="256" r="12" fill="#e85d3d" />
+              <circle cx="70" cy="256" r="10.5" fill="#f2c14e" />
+              <circle cx="66" cy="252" r="2" fill="#c0392b" />
+              <circle cx="74" cy="259" r="2" fill="#c0392b" />
+              <text x="70" y="288" font-size="8" font-weight="600" fill="#f8e3c9" text-anchor="middle">Margarita</text>
+              <text x="70" y="302" font-size="8" fill="#f6b17a" text-anchor="middle">$8</text>
+              <circle cx="104" cy="300" r="7" fill="rgba(249,115,22,.16)" />
+              <text x="104" y="303" font-size="9" font-weight="700" fill="#f97316" text-anchor="middle">+</text>
+
+              <rect x="130" y="232" width="104" height="94" rx="10" fill="#1a1512" stroke="rgba(255,255,255,.07)" />
+              <circle cx="182" cy="256" r="16" fill="url(#bncrust)" />
+              <circle cx="182" cy="256" r="12" fill="#e85d3d" />
+              <circle cx="182" cy="256" r="10.5" fill="#f2c14e" />
+              <circle cx="178" cy="252" r="2" fill="#c0392b" />
+              <circle cx="186" cy="259" r="2" fill="#c0392b" />
+              <circle cx="182" cy="256" r="2" fill="#c0392b" />
+              <text x="182" y="288" font-size="8" font-weight="600" fill="#f8e3c9" text-anchor="middle">Pepperoni</text>
+              <text x="182" y="302" font-size="8" fill="#f6b17a" text-anchor="middle">$10</text>
+              <circle cx="216" cy="300" r="7" fill="rgba(249,115,22,.16)" />
+              <text x="216" y="303" font-size="9" font-weight="700" fill="#f97316" text-anchor="middle">+</text>
+
+              <rect x="242" y="232" width="104" height="94" rx="10" fill="#1a1512" stroke="rgba(255,255,255,.07)" />
+              <circle cx="294" cy="256" r="16" fill="url(#bncrust)" />
+              <circle cx="294" cy="256" r="12" fill="#e85d3d" />
+              <circle cx="294" cy="256" r="10.5" fill="#f2c14e" />
+              <circle cx="290" cy="252" r="2" fill="#faf3dc" />
+              <circle cx="298" cy="259" r="2" fill="#faf3dc" />
+              <text x="294" y="288" font-size="8" font-weight="600" fill="#f8e3c9" text-anchor="middle">Cuatro quesos</text>
+              <text x="294" y="302" font-size="8" fill="#f6b17a" text-anchor="middle">$11</text>
+              <circle cx="328" cy="300" r="7" fill="rgba(249,115,22,.16)" />
+              <text x="328" y="303" font-size="9" font-weight="700" fill="#f97316" text-anchor="middle">+</text>
+
+              <rect x="356" y="210" width="148" height="116" rx="10" fill="#1a1512" stroke="rgba(255,255,255,.08)" />
+              <text x="368" y="227" font-size="8" font-weight="700" fill="#f8e3c9">Tu pedido</text>
+              <text x="492" y="227" font-size="6.5" fill="#8a7566" text-anchor="end">#1042</text>
+              <text x="368" y="245" font-size="7" fill="#cbb6a5">2× Margarita</text>
+              <text x="492" y="245" font-size="7" fill="#f8e3c9" text-anchor="end">$16</text>
+              <text x="368" y="259" font-size="7" fill="#cbb6a5">1× Pepperoni</text>
+              <text x="492" y="259" font-size="7" fill="#f8e3c9" text-anchor="end">$10</text>
+              <line x1="368" y1="268" x2="492" y2="268" stroke="rgba(255,255,255,.08)" />
+              <text x="368" y="284" font-size="7.5" font-weight="700" fill="#f8e3c9">Total</text>
+              <text x="492" y="284" font-size="9" font-weight="700" fill="#f6b17a" text-anchor="end">$26</text>
+              <rect x="368" y="294" width="124" height="22" rx="11" fill="url(#bnbtn)" />
+              <text x="430" y="308" font-size="7.5" font-weight="700" fill="#fff" text-anchor="middle">Confirmar pedido</text>
+            </svg>
+          </div>
+
+          <div class="project-body">
+            <div class="project-topline">
+              <span class="tag tag-accent" data-i18n="projects.featured">Proyecto destacado</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3>Bella Napoli</h3>
+            <p class="project-subtitle" data-i18n="projects.p1.subtitle">Web de pedidos para pizzería · Full-stack</p>
+            <p class="project-desc" data-i18n="projects.p1.desc">
+              Aplicación web que automatiza los pedidos de una pizzería: los clientes arman su pedido y el local lo
+              gestiona desde un panel de administración con CRUD completo. Incluye autenticación y registro con
+              validación de datos.
+            </p>
+
+            <ul class="feature-list">
+              <li data-i18n="projects.p1.f1">Flujo de pedidos automatizado, del carrito a la cocina</li>
+              <li data-i18n="projects.p1.f2">Panel de administración con CRUD de productos y pedidos</li>
+              <li data-i18n="projects.p1.f3">Login y registro con validación de datos</li>
+            </ul>
+
+            <div class="chips">
+              <span class="chip">Full-stack</span>
+              <span class="chip">CRUD</span>
+              <span class="chip">Autenticación</span>
+              <span class="chip">Base de datos</span>
+            </div>
+
+            <div class="project-links">
+              <span class="project-note" data-i18n="projects.p1.note">Código privado · puedo mostrarlo en una entrevista</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 2: WarehOS -->
+        <article class="project-featured project-featured--reverse reveal">
           <div class="project-visual project-visual--desktop">
             <svg class="app-window" viewBox="0 0 520 340" role="img" aria-label="WarehOS: panel de inventario">
               <defs>
@@ -290,21 +427,21 @@
 
           <div class="project-body">
             <div class="project-topline">
-              <span class="tag tag-accent" data-i18n="projects.featured">Proyecto destacado</span>
+              <span class="tag" data-i18n="projects.p2.tag">Proyecto personal</span>
               <span class="project-year">2026</span>
             </div>
             <h3>WarehOS</h3>
-            <p class="project-subtitle" data-i18n="projects.p1.subtitle">Sistema de inventario de escritorio · 100% offline</p>
-            <p class="project-desc" data-i18n="projects.p1.desc">
+            <p class="project-subtitle" data-i18n="projects.p2.subtitle">Sistema de inventario de escritorio · 100% offline</p>
+            <p class="project-desc" data-i18n="projects.p2.desc">
               Aplicación de escritorio multiplataforma para gestionar inventarios: productos, movimientos, múltiples
               almacenes, lotes con vencimiento (FEFO), roles y permisos, auditoría, reportes PDF/CSV y copias de
               seguridad cifradas.
             </p>
 
             <ul class="feature-list">
-              <li data-i18n="projects.p1.f1">Funciona 100% offline con base de datos SQLite local</li>
-              <li data-i18n="projects.p1.f2">Reportes PDF/CSV, etiquetas de código de barras y backups cifrados</li>
-              <li data-i18n="projects.p1.f3">Roles, auditoría y licenciamiento Pro por máquina</li>
+              <li data-i18n="projects.p2.f1">Funciona 100% offline con base de datos SQLite local</li>
+              <li data-i18n="projects.p2.f2">Reportes PDF/CSV, etiquetas de código de barras y backups cifrados</li>
+              <li data-i18n="projects.p2.f3">Roles, auditoría y licenciamiento Pro por máquina</li>
             </ul>
 
             <div class="chips">
@@ -326,8 +463,8 @@
           </div>
         </article>
 
-        <!-- Proyecto 2: Control de Movimientos -->
-        <article class="project-featured project-featured--reverse reveal">
+        <!-- Proyecto 3: Control de Movimientos -->
+        <article class="project-featured reveal">
           <div class="project-visual">
             <svg class="phone" viewBox="0 0 280 560" role="img" aria-label="Mockup de la app Control de Movimientos">
               <rect x="18" y="18" width="244" height="524" rx="40" fill="#0c1411" stroke="rgba(255,255,255,.12)" stroke-width="2" />
@@ -382,21 +519,21 @@
 
           <div class="project-body">
             <div class="project-topline">
-              <span class="tag" data-i18n="projects.p2.tag">Proyecto de pasantía</span>
+              <span class="tag" data-i18n="projects.p3.tag">Prototipo funcional</span>
               <span class="project-year">2026</span>
             </div>
-            <h3 data-i18n="projects.p2.title">Control de Movimientos</h3>
-            <p class="project-subtitle" data-i18n="projects.p2.subtitle">App Android para planta de procesamiento</p>
-            <p class="project-desc" data-i18n="projects.p2.desc">
+            <h3 data-i18n="projects.p3.title">Control de Movimientos</h3>
+            <p class="project-subtitle" data-i18n="projects.p3.subtitle">App Android para planta de procesamiento</p>
+            <p class="project-desc" data-i18n="projects.p3.desc">
               Aplicación 100% offline para registrar la entrada y salida de camiones. Incluye autenticación local
               con bloqueo tras intentos fallidos, gestión de camiones, cálculo automático de horas, dashboard con
               métricas y exportación de reportes en PDF.
             </p>
 
             <ul class="feature-list">
-              <li data-i18n="projects.p2.f1">Funciona sin conexión a internet</li>
-              <li data-i18n="projects.p2.f2">Reportes exportables a PDF</li>
-              <li data-i18n="projects.p2.f3">Arquitectura MVVM con Room y Flow</li>
+              <li data-i18n="projects.p3.f1">Funciona sin conexión a internet</li>
+              <li data-i18n="projects.p3.f2">Reportes exportables a PDF</li>
+              <li data-i18n="projects.p3.f3">Arquitectura MVVM con Room y Flow</li>
             </ul>
 
             <div class="chips">
@@ -411,7 +548,7 @@
             </div>
 
             <div class="project-links">
-              <span class="project-note" data-i18n="projects.p2.note">Código privado (proyecto de pasantía)</span>
+              <span class="project-note" data-i18n="projects.p3.note">Código privado</span>
             </div>
           </div>
         </article>
@@ -422,10 +559,10 @@
               <span class="project-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>
               </span>
-              <span class="tag" data-i18n="projects.p3.status">Publicado</span>
+              <span class="tag" data-i18n="projects.p4.status">Publicado</span>
             </div>
-            <h3 data-i18n="projects.p3.title">Portafolio personal</h3>
-            <p data-i18n="projects.p3.desc">
+            <h3 data-i18n="projects.p4.title">Portafolio personal</h3>
+            <p data-i18n="projects.p4.desc">
               Sitio estático bilingüe (ES/EN) sin frameworks ni dependencias de build. Este mismo sitio: rápido,
               accesible y desplegado gratis en GitHub Pages.
             </p>
@@ -487,10 +624,14 @@
             </div>
             <div class="chips">
               <span class="chip">Python</span>
-              <span class="chip">PostgreSQL</span>
-              <span class="chip">SQL</span>
-              <span class="chip">SQLite</span>
+              <span class="chip">Django</span>
+              <span class="chip">Node.js</span>
               <span class="chip">APIs REST</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">Cassandra</span>
+              <span class="chip">Neo4j</span>
             </div>
           </div>
 
@@ -520,11 +661,11 @@
             <div class="chips">
               <span class="chip">Git</span>
               <span class="chip">GitHub</span>
+              <span class="chip">Docker</span>
+              <span class="chip">Postman</span>
               <span class="chip">VS Code</span>
               <span class="chip">Vite</span>
               <span class="chip">Android Studio</span>
-              <span class="chip">Gradle</span>
-              <span class="chip">Vitest</span>
             </div>
           </div>
         </div>
@@ -542,9 +683,25 @@
         <ol class="timeline">
           <li class="timeline-item reveal">
             <span class="timeline-date" data-i18n="experience.e1.date">2026</span>
-            <h3 data-i18n="experience.e1.title">Creador de WarehOS — Proyecto personal</h3>
-            <p class="timeline-org" data-i18n="experience.e1.org">Aplicación de escritorio</p>
+            <h3 data-i18n="experience.e1.title">Bella Napoli — Proyecto personal</h3>
+            <p class="timeline-org" data-i18n="experience.e1.org">Aplicación web full-stack</p>
             <p data-i18n="experience.e1.desc">
+              Diseño y desarrollo de una web de pedidos para una pizzería: panel de administración con CRUD de
+              productos y pedidos, autenticación y registro con validación de datos, y automatización del flujo de
+              pedidos.
+            </p>
+            <div class="chips">
+              <span class="chip">Full-stack</span>
+              <span class="chip">CRUD</span>
+              <span class="chip">Autenticación</span>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-date" data-i18n="experience.e2.date">2026</span>
+            <h3 data-i18n="experience.e2.title">Creador de WarehOS — Proyecto personal</h3>
+            <p class="timeline-org" data-i18n="experience.e2.org">Aplicación de escritorio</p>
+            <p data-i18n="experience.e2.desc">
               Diseño y desarrollo de un sistema de inventario multiplataforma con Electron, React y TypeScript:
               base de datos local cifrada, control de roles, auditoría, reportes y empaquetado para Windows,
               macOS y Linux.
@@ -557,10 +714,10 @@
           </li>
 
           <li class="timeline-item reveal">
-            <span class="timeline-date" data-i18n="experience.e2.date">2026</span>
-            <h3 data-i18n="experience.e2.title">Desarrollador Android — Proyecto de pasantía</h3>
-            <p class="timeline-org" data-i18n="experience.e2.org">Ferrominera Orinoco</p>
-            <p data-i18n="experience.e2.desc">
+            <span class="timeline-date" data-i18n="experience.e3.date">2026</span>
+            <h3 data-i18n="experience.e3.title">Control de Movimientos — Prototipo Android</h3>
+            <p class="timeline-org" data-i18n="experience.e3.org">App offline para planta de procesamiento</p>
+            <p data-i18n="experience.e3.desc">
               Desarrollo de un prototipo offline para el control de movimientos de camiones: diseño de la base de
               datos, capa de repositorios, interfaz en Jetpack Compose y generación de reportes PDF.
             </p>
@@ -572,12 +729,17 @@
           </li>
 
           <li class="timeline-item reveal">
-            <span class="timeline-date" data-i18n="experience.e3.date">Formación</span>
-            <h3 data-i18n="experience.e3.title">Formación en desarrollo de software</h3>
-            <p class="timeline-org" data-i18n="experience.e3.org">Tu institución</p>
-            <p data-i18n="experience.e3.desc">
-              Estudios y cursos enfocados en programación, desarrollo de software y tecnologías móviles.
+            <span class="timeline-date" data-i18n="experience.e4.date">En curso</span>
+            <h3 data-i18n="experience.e4.title">Ingeniería en Informática</h3>
+            <p class="timeline-org" data-i18n="experience.e4.org">Universidad Nacional Experimental de Guayana (UNEG)</p>
+            <p data-i18n="experience.e4.desc">
+              Séptimo semestre. Formación en programación, bases de datos, ingeniería de software y desarrollo de
+              aplicaciones.
             </p>
+            <div class="chips">
+              <span class="chip">7mo semestre</span>
+              <span class="chip">En curso</span>
+            </div>
           </li>
         </ol>
       </div>
@@ -590,7 +752,8 @@
           <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
           <h2 data-i18n="contact.title">¿Construimos algo juntos?</h2>
           <p class="contact-lead" data-i18n="contact.lead">
-            Estoy abierto a oportunidades, colaboraciones y proyectos freelance. Escríbeme y te respondo lo antes posible.
+            Estoy buscando mi primera oportunidad como desarrollador full-stack. También estoy abierto a
+            colaboraciones y proyectos freelance. Escríbeme y te respondo lo antes posible.
           </p>
 
           <div class="contact-actions">

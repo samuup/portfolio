@@ -25,12 +25,12 @@ const CONFIG = {
   initials: "SP",            // vacío = se calcula solo desde el nombre
   email: "samuelpradouribe@gmail.com",
   github: "https://github.com/samuup",
-  linkedin: "",              // opcional; vacío = se oculta
-  location: "Venezuela",
+  linkedin: "https://www.linkedin.com/in/samuel-prado-994940326",
+  location: "Ciudad Guayana, Venezuela",
   photo: "",                 // ej: "assets/foto.jpg". Vacío = iniciales
 
-  projectRepo: "https://github.com/samuup/WarehOS",     // proyecto destacado
-  siteRepo: "https://github.com/samuup/portafolio",     // repo de este sitio
+  projectRepo: "https://github.com/samuup/WarehOS",     // repo de WarehOS
+  siteRepo: "https://github.com/samuup/samuup.github.io", // repo de este sitio
 };
 ```
 
@@ -48,9 +48,10 @@ atributos `data-i18n` del `index.html`.
 
 Contenido que conviene revisar:
 
-- `experience.e3.*` → tu formación real (institución y descripción).
-- `experience.e2.*` → ajusta el cargo/fechas de la pasantía si hace falta.
-- `projects.p2.note` → hoy dice que el código es privado; cámbialo si publicas el repo.
+- `projects.p1.*` → Bella Napoli (proyecto destacado). Si publicas el repo, cambia
+  `projects.p1.note` por un enlace y añade el stack real en los chips del `index.html`.
+- `experience.e4.*` → tu formación en la UNEG (semestre y descripción).
+- `projects.p3.note` → hoy dice que el código es privado; cámbialo si publicas el repo.
 - `meta.role` / `meta.description` → cómo te describes para Google y redes.
 
 ### 3. Colores y tipografía → `css/styles.css`
@@ -67,7 +68,7 @@ Cambia esos valores y el sitio entero se adapta.
 
 ## Publicarlo en GitHub Pages
 
-### Opción A — repositorio `usuario.github.io` (URL más corta)
+### Opción A — repositorio `usuario.github.io` (URL más corta, recomendada)
 
 1. Crea un repositorio llamado exactamente `samuup.github.io`.
 2. Sube el contenido de esta carpeta a la rama `main` (el `index.html` debe quedar en la raíz).
@@ -83,7 +84,7 @@ git remote add origin https://github.com/samuup/samuup.github.io.git
 git push -u origin main
 ```
 
-### Opción B — cualquier nombre de repositorio (recomendado: `portafolio`)
+### Opción B — cualquier nombre de repositorio (por ejemplo, `portafolio`)
 
 1. Crea el repositorio `portafolio` en GitHub y sube los archivos igual que arriba.
 2. En GitHub ve a **Settings → Pages**.
