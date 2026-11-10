@@ -77,7 +77,7 @@ const TRANSLATIONS = {
     "projects.p1.f2": "Panel admin con CRUD de menú, pedidos y pagos",
     "projects.p1.f3": "Estado del pedido en vivo con Socket.IO",
     "projects.p1.f4": "Autenticación con bcrypt, CSRF y recuperación de contraseña",
-    "projects.p1.note": "MVP funcional · Proyecto académico",
+    "projects.p1.note": "MVP funcional",
     "projects.p2.tag": "Proyecto personal",
     "projects.p2.subtitle": "Sistema de inventario de escritorio · 100% offline",
     "projects.p2.desc":
@@ -204,7 +204,7 @@ const TRANSLATIONS = {
     "projects.p1.f2": "Admin panel with menu, order and payment CRUD",
     "projects.p1.f3": "Live order status with Socket.IO",
     "projects.p1.f4": "Authentication with bcrypt, CSRF and password recovery",
-    "projects.p1.note": "Working MVP · Academic project",
+    "projects.p1.note": "Working MVP",
     "projects.p2.tag": "Personal project",
     "projects.p2.subtitle": "Desktop inventory system · 100% offline",
     "projects.p2.desc":
