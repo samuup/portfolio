@@ -17,6 +17,7 @@ const CONFIG = {
   photo: "", // ej: "assets/foto.jpg". Vacío = muestra iniciales
 
   projectRepo: "https://github.com/samuup/WarehOS", // repo de WarehOS
+  bellaRepo: "https://github.com/samuup/Bella-Napoli", // repo de Bella Napoli
   siteRepo: "https://github.com/samuup/samuup.github.io", // repo de este sitio
 };
 
@@ -54,7 +55,7 @@ const TRANSLATIONS = {
     "about.p1":
       "Soy desarrollador full-stack. Me muevo con comodidad entre el backend (Python/Django, Node.js), las bases de datos (PostgreSQL, MySQL, MongoDB, Cassandra, Neo4j) y el frontend (React, JavaScript, TypeScript). Me importan la arquitectura, el rendimiento y que la interfaz se entienda sin manual.",
     "about.p2":
-      "He construido Bella Napoli, una web para una pizzería que automatiza los pedidos con panel de administración, CRUD y autenticación validada. También WarehOS, un sistema de inventario de escritorio con múltiples almacenes, roles, auditoría y reportes, y una app Android 100% offline para el control de movimientos de camiones en una planta de procesamiento.",
+      "He construido Bella Napoli, una web de pedidos para una pizzería con Node.js, Express, PostgreSQL y Socket.IO: pedidos en cuatro pasos, pagos con comprobante, notificaciones en tiempo real y panel de administración con CRUD. También WarehOS, un sistema de inventario de escritorio con múltiples almacenes, roles, auditoría y reportes, y una app Android 100% offline para el control de movimientos de camiones en una planta de procesamiento.",
     "about.p3":
       "Curso el séptimo semestre de Ingeniería en Informática en la UNEG. Busco mi primera oportunidad profesional para aportar en producto, arquitectura y calidad de código, y seguir aprendiendo de otros desarrolladores.",
     "about.facts.location": "Ubicación",
@@ -69,13 +70,14 @@ const TRANSLATIONS = {
     "projects.lead":
       "Proyectos reales, con restricciones reales. Cada uno me enseñó algo distinto sobre producto y código.",
     "projects.featured": "Proyecto destacado",
-    "projects.p1.subtitle": "Web de pedidos para pizzería · Full-stack",
+    "projects.p1.subtitle": "Web de pedidos para pizzería · Node.js + PostgreSQL",
     "projects.p1.desc":
-      "Aplicación web que automatiza los pedidos de una pizzería: los clientes arman su pedido y el local lo gestiona desde un panel de administración con CRUD completo. Incluye autenticación y registro con validación de datos.",
-    "projects.p1.f1": "Flujo de pedidos automatizado, del carrito a la cocina",
-    "projects.p1.f2": "Panel de administración con CRUD de productos y pedidos",
-    "projects.p1.f3": "Login y registro con validación de datos",
-    "projects.p1.note": "Código privado · puedo mostrarlo en una entrevista",
+      "Aplicación web completa para una pizzería: los clientes arman su pedido en cuatro pasos, pagan con referencia o comprobante y siguen el estado en tiempo real. Incluye panel de administración con CRUD del menú y gestión de pedidos.",
+    "projects.p1.f1": "Pedidos en 4 pasos con total en tiempo real",
+    "projects.p1.f2": "Panel admin con CRUD de menú, pedidos y pagos",
+    "projects.p1.f3": "Estado del pedido en vivo con Socket.IO",
+    "projects.p1.f4": "Autenticación con bcrypt, CSRF y recuperación de contraseña",
+    "projects.p1.note": "MVP funcional · Proyecto académico",
     "projects.p2.tag": "Proyecto personal",
     "projects.p2.subtitle": "Sistema de inventario de escritorio · 100% offline",
     "projects.p2.desc":
@@ -115,9 +117,9 @@ const TRANSLATIONS = {
     "experience.title": "Experiencia y formación",
     "experience.e1.date": "2026",
     "experience.e1.title": "Bella Napoli — Proyecto personal",
-    "experience.e1.org": "Aplicación web full-stack",
+    "experience.e1.org": "Aplicación web full-stack · Node.js + PostgreSQL",
     "experience.e1.desc":
-      "Diseño y desarrollo de una web de pedidos para una pizzería: panel de administración con CRUD de productos y pedidos, autenticación y registro con validación de datos, y automatización del flujo de pedidos.",
+      "Desarrollo de una web de pedidos con Node.js, Express, EJS y PostgreSQL: autenticación con bcrypt y CSRF, pedidos en cuatro pasos con total en tiempo real, pagos con referencia o comprobante, notificaciones con Socket.IO y panel de administración con CRUD y gestión de pedidos.",
     "experience.e2.date": "2026",
     "experience.e2.title": "Creador de WarehOS — Proyecto personal",
     "experience.e2.org": "Aplicación de escritorio",
@@ -180,7 +182,7 @@ const TRANSLATIONS = {
     "about.p1":
       "I'm a full-stack developer. I move comfortably between the backend (Python/Django, Node.js), databases (PostgreSQL, MySQL, MongoDB, Cassandra, Neo4j) and the frontend (React, JavaScript, TypeScript). I care about architecture, performance, and interfaces that make sense without a manual.",
     "about.p2":
-      "I've built Bella Napoli, a pizzeria website that automates orders with an admin panel, CRUD and validated authentication. I also built WarehOS, a desktop inventory system with multiple warehouses, roles, auditing and reports, and a fully offline Android app to track truck movements at a processing plant.",
+      "I've built Bella Napoli, a pizzeria ordering site with Node.js, Express, PostgreSQL and Socket.IO: a four-step order flow, receipt-based payments, real-time notifications and an admin panel with CRUD. I also built WarehOS, a desktop inventory system with multiple warehouses, roles, auditing and reports, and a fully offline Android app to track truck movements at a processing plant.",
     "about.p3":
       "I'm in my seventh semester of Computer Engineering at UNEG. I'm looking for my first professional opportunity to contribute to product, architecture and code quality while learning from other developers.",
     "about.facts.location": "Location",
@@ -195,13 +197,14 @@ const TRANSLATIONS = {
     "projects.lead":
       "Real projects with real constraints. Each one taught me something different about product and code.",
     "projects.featured": "Featured project",
-    "projects.p1.subtitle": "Pizzeria ordering website · Full-stack",
+    "projects.p1.subtitle": "Pizzeria ordering website · Node.js + PostgreSQL",
     "projects.p1.desc":
-      "A web application that automates a pizzeria's orders: customers build their order and the restaurant manages it from an admin panel with full CRUD. It includes authentication and registration with data validation.",
-    "projects.p1.f1": "Automated order flow, from cart to kitchen",
-    "projects.p1.f2": "Admin panel with CRUD for products and orders",
-    "projects.p1.f3": "Login and registration with data validation",
-    "projects.p1.note": "Private code · happy to walk through it in an interview",
+      "A complete web application for a pizzeria: customers build their order in four steps, pay by reference or receipt, and follow the order status in real time. It includes an admin panel with menu CRUD and order management.",
+    "projects.p1.f1": "Four-step ordering with a live order total",
+    "projects.p1.f2": "Admin panel with menu, order and payment CRUD",
+    "projects.p1.f3": "Live order status with Socket.IO",
+    "projects.p1.f4": "Authentication with bcrypt, CSRF and password recovery",
+    "projects.p1.note": "Working MVP · Academic project",
     "projects.p2.tag": "Personal project",
     "projects.p2.subtitle": "Desktop inventory system · 100% offline",
     "projects.p2.desc":
@@ -241,9 +244,9 @@ const TRANSLATIONS = {
     "experience.title": "Experience & education",
     "experience.e1.date": "2026",
     "experience.e1.title": "Bella Napoli — Personal project",
-    "experience.e1.org": "Full-stack web application",
+    "experience.e1.org": "Full-stack web application · Node.js + PostgreSQL",
     "experience.e1.desc":
-      "Designed and built a pizzeria ordering website: admin panel with CRUD for products and orders, authentication and registration with data validation, and an automated order flow.",
+      "Built an ordering website with Node.js, Express, EJS and PostgreSQL: bcrypt and CSRF authentication, a four-step order flow with a live total, reference or receipt payments, Socket.IO notifications and an admin panel with CRUD and order management.",
     "experience.e2.date": "2026",
     "experience.e2.title": "Creator of WarehOS — Personal project",
     "experience.e2.org": "Desktop application",

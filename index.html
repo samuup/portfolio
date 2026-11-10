@@ -139,10 +139,11 @@
               TypeScript). Me importan la arquitectura, el rendimiento y que la interfaz se entienda sin manual.
             </p>
             <p data-i18n="about.p2">
-              He construido Bella Napoli, una web para una pizzería que automatiza los pedidos con panel de
-              administración, CRUD y autenticación validada. También WarehOS, un sistema de inventario de escritorio
-              con múltiples almacenes, roles, auditoría y reportes, y una app Android 100% offline para el control de
-              movimientos de camiones en una planta de procesamiento.
+              He construido Bella Napoli, una web de pedidos para una pizzería con Node.js, Express, PostgreSQL y
+              Socket.IO: pedidos en cuatro pasos, pagos con comprobante, notificaciones en tiempo real y panel de
+              administración con CRUD. También WarehOS, un sistema de inventario de escritorio con múltiples
+              almacenes, roles, auditoría y reportes, y una app Android 100% offline para el control de movimientos
+              de camiones en una planta de procesamiento.
             </p>
             <p data-i18n="about.p3">
               Curso el séptimo semestre de Ingeniería en Informática en la UNEG. Busco mi primera oportunidad
@@ -298,28 +299,35 @@
               <span class="project-year">2026</span>
             </div>
             <h3>Bella Napoli</h3>
-            <p class="project-subtitle" data-i18n="projects.p1.subtitle">Web de pedidos para pizzería · Full-stack</p>
+            <p class="project-subtitle" data-i18n="projects.p1.subtitle">Web de pedidos para pizzería · Node.js + PostgreSQL</p>
             <p class="project-desc" data-i18n="projects.p1.desc">
-              Aplicación web que automatiza los pedidos de una pizzería: los clientes arman su pedido y el local lo
-              gestiona desde un panel de administración con CRUD completo. Incluye autenticación y registro con
-              validación de datos.
+              Aplicación web completa para una pizzería: los clientes arman su pedido en cuatro pasos, pagan con
+              referencia o comprobante y siguen el estado en tiempo real. Incluye panel de administración con CRUD
+              del menú y gestión de pedidos.
             </p>
 
             <ul class="feature-list">
-              <li data-i18n="projects.p1.f1">Flujo de pedidos automatizado, del carrito a la cocina</li>
-              <li data-i18n="projects.p1.f2">Panel de administración con CRUD de productos y pedidos</li>
-              <li data-i18n="projects.p1.f3">Login y registro con validación de datos</li>
+              <li data-i18n="projects.p1.f1">Pedidos en 4 pasos con total en tiempo real</li>
+              <li data-i18n="projects.p1.f2">Panel admin con CRUD de menú, pedidos y pagos</li>
+              <li data-i18n="projects.p1.f3">Estado del pedido en vivo con Socket.IO</li>
+              <li data-i18n="projects.p1.f4">Autenticación con bcrypt, CSRF y recuperación de contraseña</li>
             </ul>
 
             <div class="chips">
-              <span class="chip">Full-stack</span>
-              <span class="chip">CRUD</span>
-              <span class="chip">Autenticación</span>
-              <span class="chip">Base de datos</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">Express</span>
+              <span class="chip">EJS</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Socket.IO</span>
+              <span class="chip">Tailwind CSS</span>
             </div>
 
             <div class="project-links">
-              <span class="project-note" data-i18n="projects.p1.note">Código privado · puedo mostrarlo en una entrevista</span>
+              <a class="btn btn-primary btn-sm" data-config-href="bellaRepo" href="https://github.com/samuup/Bella-Napoli" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.4 4.7 18.4 5 18.4 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+                <span data-i18n="projects.viewCode">Ver código</span>
+              </a>
+              <span class="project-note" data-i18n="projects.p1.note">MVP funcional · Proyecto académico</span>
             </div>
           </div>
         </article>
@@ -612,6 +620,7 @@
               <span class="chip">TypeScript</span>
               <span class="chip">React</span>
               <span class="chip">Tailwind CSS</span>
+              <span class="chip">EJS</span>
             </div>
           </div>
 
@@ -626,7 +635,8 @@
               <span class="chip">Python</span>
               <span class="chip">Django</span>
               <span class="chip">Node.js</span>
-              <span class="chip">APIs REST</span>
+              <span class="chip">Express</span>
+              <span class="chip">Socket.IO</span>
               <span class="chip">PostgreSQL</span>
               <span class="chip">MySQL</span>
               <span class="chip">MongoDB</span>
@@ -684,16 +694,17 @@
           <li class="timeline-item reveal">
             <span class="timeline-date" data-i18n="experience.e1.date">2026</span>
             <h3 data-i18n="experience.e1.title">Bella Napoli — Proyecto personal</h3>
-            <p class="timeline-org" data-i18n="experience.e1.org">Aplicación web full-stack</p>
+            <p class="timeline-org" data-i18n="experience.e1.org">Aplicación web full-stack · Node.js + PostgreSQL</p>
             <p data-i18n="experience.e1.desc">
-              Diseño y desarrollo de una web de pedidos para una pizzería: panel de administración con CRUD de
-              productos y pedidos, autenticación y registro con validación de datos, y automatización del flujo de
-              pedidos.
+              Desarrollo de una web de pedidos con Node.js, Express, EJS y PostgreSQL: autenticación con bcrypt y
+              CSRF, pedidos en cuatro pasos con total en tiempo real, pagos con referencia o comprobante,
+              notificaciones con Socket.IO y panel de administración con CRUD y gestión de pedidos.
             </p>
             <div class="chips">
-              <span class="chip">Full-stack</span>
-              <span class="chip">CRUD</span>
-              <span class="chip">Autenticación</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">Express</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Socket.IO</span>
             </div>
           </li>
 

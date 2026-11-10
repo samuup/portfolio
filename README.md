@@ -30,6 +30,7 @@ const CONFIG = {
   photo: "",                 // ej: "assets/foto.jpg". Vacío = iniciales
 
   projectRepo: "https://github.com/samuup/WarehOS",     // repo de WarehOS
+  bellaRepo: "https://github.com/samuup/Bella-Napoli",  // repo de Bella Napoli
   siteRepo: "https://github.com/samuup/samuup.github.io", // repo de este sitio
 };
 ```
@@ -38,7 +39,7 @@ const CONFIG = {
 - **LinkedIn:** si lo dejas vacío, el enlace desaparece automáticamente.
 - **Nombre:** se actualiza en el logo, el hero, el footer y el título de la página.
 - **Proyectos:** los enlaces de cada tarjeta están en el `index.html` con `data-config-href`
-  (`projectRepo`, `siteRepo`, `github`).
+  (`projectRepo`, `bellaRepo`, `siteRepo`, `github`).
 
 ### 2. Textos → `js/main.js` (objeto `TRANSLATIONS`)
 
@@ -48,8 +49,8 @@ atributos `data-i18n` del `index.html`.
 
 Contenido que conviene revisar:
 
-- `projects.p1.*` → Bella Napoli (proyecto destacado). Si publicas el repo, cambia
-  `projects.p1.note` por un enlace y añade el stack real en los chips del `index.html`.
+- `projects.p1.*` → Bella Napoli (proyecto destacado). El repo ya es público y está enlazado
+  con `bellaRepo`; si cambias de repo, actualiza esa clave y los chips del `index.html`.
 - `experience.e4.*` → tu formación en la UNEG (semestre y descripción).
 - `projects.p3.note` → hoy dice que el código es privado; cámbialo si publicas el repo.
 - `meta.role` / `meta.description` → cómo te describes para Google y redes.
